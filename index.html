@@ -1,793 +1,313 @@
+<!-- Updated version based on your provided file :contentReference[oaicite:0]{index=0} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AhaSlides Careers</title>
-  <meta
-    name="description"
-    content="Explore careers at AhaSlides. Discover open roles, learn about our culture, and find where you can grow with us."
-  />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1f2937;
-      background: #f8fafc;
-      line-height: 1.6;
+      font-family: "Inter", sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration: none; color: inherit; }
 
     .container {
-      width: min(1120px, calc(100% - 40px));
-      margin: 0 auto;
+      width: min(1200px, calc(100% - 40px));
+      margin: auto;
     }
 
+    /* NAVBAR */
     .navbar {
       position: sticky;
       top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(15,23,42,0.9);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid #e5e7eb;
+      border-bottom: 1px solid #1e293b;
+      z-index: 999;
     }
 
     .nav-inner {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      align-items: center;
       padding: 16px 0;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       font-weight: 700;
-      font-size: 22px;
-      color: #111827;
+      font-size: 20px;
     }
 
-    .brand-badge {
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #7c3aed, #ec4899, #06b6d4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      font-size: 18px;
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg,#7c3aed,#ec4899,#06b6d4);
     }
 
     .nav-links {
       display: flex;
-      gap: 24px;
-      font-size: 15px;
-      color: #4b5563;
-    }
-
-    .nav-links a:hover {
-      color: #111827;
+      gap: 20px;
+      font-size: 14px;
+      color: #94a3b8;
     }
 
     .btn {
-      display: inline-block;
-      padding: 12px 20px;
+      padding: 10px 18px;
       border-radius: 999px;
-      font-weight: 700;
-      transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      background: #111827;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      opacity: 0.92;
-    }
-
-    .btn-secondary {
-      border: 1px solid #d1d5db;
-      color: #111827;
-      background: white;
-    }
-
-    .btn-secondary:hover {
-      border-color: #9ca3af;
-    }
-
-    .hero {
-      padding: 72px 0 56px;
-      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 36px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: #f5f3ff;
-      color: #7c3aed;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 54px;
-      line-height: 1.08;
-      color: #111827;
-    }
-
-    .hero p {
-      margin: 20px 0 0;
-      font-size: 18px;
-      color: #4b5563;
-      max-width: 700px;
-    }
-
-    .hero-actions {
-      margin-top: 28px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .hero-card-wrap {
-      display: grid;
-      gap: 16px;
-    }
-
-    .hero-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 24px;
-      padding: 24px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-    }
-
-    .progress-bar {
-      width: 100%;
-      height: 12px;
-      background: #e5e7eb;
-      border-radius: 999px;
-      overflow: hidden;
-      margin: 14px 0 8px;
-    }
-
-    .progress {
-      width: 78%;
-      height: 100%;
-      background: linear-gradient(90deg, #7c3aed, #ec4899, #06b6d4);
-    }
-
-    .mini-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .mini-box {
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      border-radius: 20px;
-      padding: 20px;
-    }
-
-    .section {
-      padding: 72px 0;
-    }
-
-    .section-light {
-      background: white;
-    }
-
-    .section-title {
-      margin: 0 0 14px;
-      font-size: 38px;
-      line-height: 1.15;
-      color: #111827;
-    }
-
-    .section-subtitle {
-      margin: 0;
-      max-width: 760px;
-      color: #6b7280;
-      font-size: 17px;
-    }
-
-    .grid-3 {
-      margin-top: 34px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .grid-4 {
-      margin-top: 34px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 24px;
-      padding: 26px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
-    }
-
-    .card h3 {
-      margin: 0 0 12px;
-      font-size: 22px;
-      color: #111827;
-    }
-
-    .card p {
-      margin: 0;
-      color: #6b7280;
-      font-size: 15px;
-    }
-
-    .step-number {
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #111827;
-      color: white;
-      border-radius: 14px;
-      font-weight: 700;
-      margin-bottom: 18px;
-    }
-
-    .value-pill-wrap {
-      margin-top: 26px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .value-pill {
-      padding: 10px 16px;
-      border-radius: 999px;
-      background: #111827;
-      color: white;
-      font-size: 14px;
       font-weight: 600;
     }
 
-    .job-grid {
-      margin-top: 34px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .job-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 24px;
-      padding: 26px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
-    }
-
-    .job-tag {
-      display: inline-block;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: #f3f4f6;
-      color: #4b5563;
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 14px;
-    }
-
-    .job-card h3 {
-      margin: 0 0 10px;
-      font-size: 22px;
-      color: #111827;
-    }
-
-    .job-meta {
-      font-size: 14px;
-      color: #7c3aed;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .job-card p {
-      margin: 0;
-      color: #6b7280;
-      font-size: 15px;
-    }
-
-    .job-actions {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .btn-small {
-      padding: 10px 16px;
-      font-size: 14px;
-      border-radius: 999px;
-      font-weight: 700;
+    .btn-primary {
+      background: linear-gradient(135deg,#7c3aed,#ec4899);
+      color: white;
     }
 
     .btn-outline {
-      border: 1px solid #d1d5db;
-      background: white;
-      color: #111827;
+      border: 1px solid #334155;
+      color: #e2e8f0;
     }
 
-    .btn-dark {
-      background: #111827;
-      color: white;
-    }
-
-    .process-grid {
-      margin-top: 34px;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 18px;
-    }
-
-    .process-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 22px;
-      padding: 20px;
-      text-align: left;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
-    }
-
-    .process-card strong {
-      display: block;
-      color: #7c3aed;
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-
-    .brand-grid {
-      margin-top: 34px;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 24px;
-    }
-
-    .brand-panel {
-      background: #111827;
-      color: white;
-      border-radius: 28px;
-      padding: 32px;
-    }
-
-    .brand-panel p {
-      color: #d1d5db;
-    }
-
-    .small-panels {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .small-panel {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 22px;
-      padding: 22px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
-    }
-
-    .small-panel h4 {
-      margin: 0 0 10px;
-      font-size: 18px;
-      color: #111827;
-    }
-
-    .small-panel p {
-      margin: 0;
-      color: #6b7280;
-      font-size: 14px;
-    }
-
-    .cta {
-      padding: 72px 0 90px;
-    }
-
-    .cta-box {
-      background: linear-gradient(135deg, #111827, #4c1d95, #111827);
-      color: white;
-      border-radius: 32px;
-      padding: 42px;
-    }
-
-    .cta-box p {
-      color: #e5e7eb;
-      max-width: 720px;
-    }
-
-    .footer {
-      padding: 24px 0 42px;
-      color: #6b7280;
-      font-size: 14px;
+    /* HERO */
+    .hero {
+      padding: 100px 0;
+      background: radial-gradient(circle at top,#1e293b,#020617);
       text-align: center;
     }
 
-    @media (max-width: 1024px) {
-      .hero-grid,
-      .brand-grid,
-      .grid-3,
-      .grid-4,
-      .job-grid,
-      .process-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .small-panels {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      h1 {
-        font-size: 44px;
-      }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
     }
 
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-      }
-
-      .hero-grid,
-      .grid-3,
-      .grid-4,
-      .job-grid,
-      .process-grid,
-      .brand-grid,
-      .mini-grid,
-      .small-panels {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 48px;
-      }
-
-      h1 {
-        font-size: 36px;
-      }
-
-      .section-title {
-        font-size: 30px;
-      }
-
-      .cta-box {
-        padding: 28px;
-      }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #94a3b8;
     }
+
+    .hero-actions {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 0;
+    }
+
+    .title {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      max-width: 700px;
+    }
+
+    /* GRID */
+    .grid {
+      margin-top: 40px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-3 { grid-template-columns: repeat(3,1fr); }
+    .grid-2 { grid-template-columns: repeat(2,1fr); }
+
+    /* CARD */
+    .card {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 24px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #7c3aed;
+    }
+
+    /* JOB */
+    .job-card h3 { margin: 10px 0; }
+
+    .tag {
+      font-size: 12px;
+      background: #1e293b;
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .meta {
+      color: #7c3aed;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg,#7c3aed,#ec4899);
+      padding: 60px 20px;
+      border-radius: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+    }
+
+    @media(max-width:900px){
+      .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 34px; }
+    }
+
   </style>
 </head>
+
 <body>
-  <header class="navbar">
-    <div class="container nav-inner">
-      <div class="brand">
-        <div class="brand-badge">A</div>
-        <span>AhaSlides Careers</span>
-      </div>
 
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#culture">Culture</a>
-        <a href="#jobs">Open Roles</a>
-        <a href="#process">Hiring Process</a>
-        <a href="#apply">Apply</a>
-      </nav>
-
-      <a class="btn btn-primary" href="#jobs">View Jobs</a>
+<header class="navbar">
+  <div class="container nav-inner">
+    <div class="brand">
+      <div class="logo"></div>
+      AhaSlides Careers
     </div>
-  </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Join AhaSlides</span>
-        <h1>Build a global product and grow with a team that values ownership, learning, and real impact.</h1>
-        <p>
-          Explore open roles at AhaSlides, discover how we work, and get a closer look at our culture, values,
-          and the opportunities waiting for you here.
-        </p>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#culture">Culture</a>
+    </div>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#jobs">Explore Open Roles</a>
-          <a class="btn btn-secondary" href="#culture">Discover Our Culture</a>
-        </div>
+    <a href="#jobs" class="btn btn-primary">View Jobs</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Join AhaSlides — Build Global Impact</h1>
+    <p>
+      Work on a product used worldwide. Grow with a high-performing team that values ownership, clarity, and impact.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#jobs" class="btn btn-primary">Explore Jobs</a>
+      <a href="#about" class="btn btn-outline">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="title">About AhaSlides</h2>
+    <p class="subtitle">
+      AhaSlides is a global audience engagement platform helping teams, educators, and speakers create interactive presentations.
+    </p>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Global Product</h3>
+        <p>Used by millions across 100+ countries.</p>
       </div>
-
-      <div class="hero-card-wrap">
-        <div class="hero-card">
-          <strong style="font-size: 18px;">Candidate journey</strong>
-          <div class="progress-bar">
-            <div class="progress"></div>
-          </div>
-          <p style="margin: 0; color: #6b7280;">A transparent hiring process designed to help both sides assess fit clearly.</p>
-        </div>
-
-        <div class="mini-grid">
-          <div class="mini-box">
-            <strong style="display:block; margin-bottom:8px;">Global product</strong>
-            <span style="color:#6b7280;">Work on a platform used by teams, educators, and presenters worldwide.</span>
-          </div>
-          <div class="mini-box">
-            <strong style="display:block; margin-bottom:8px;">High ownership</strong>
-            <span style="color:#6b7280;">Take initiative, solve problems, and create visible impact.</span>
-          </div>
-        </div>
+      <div class="card">
+        <h3>High Ownership</h3>
+        <p>Everyone contributes to real business impact.</p>
+      </div>
+      <div class="card">
+        <h3>Fast Growth</h3>
+        <p>Learn quickly in a high-performance environment.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">About AhaSlides</h2>
-      <p class="section-subtitle">
-        AhaSlides is an audience engagement platform that helps presentations, training sessions, and classrooms
-        become more interactive. We are building a global product with a team that cares deeply about quality,
-        collaboration, and continuous improvement.
-      </p>
+<section id="jobs" class="section">
+  <div class="container">
+    <h2 class="title">Open Roles</h2>
 
-      <div class="grid-3">
-        <div class="card">
-          <div class="step-number">01</div>
-          <h3>Meaningful work</h3>
-          <p>Build features, systems, and experiences that create real value for users around the world.</p>
-        </div>
-        <div class="card">
-          <div class="step-number">02</div>
-          <h3>Strong teammates</h3>
-          <p>Collaborate with people who are thoughtful, capable, and committed to doing good work together.</p>
-        </div>
-        <div class="card">
-          <div class="step-number">03</div>
-          <h3>Room to grow</h3>
-          <p>Take on challenges, receive feedback, and keep developing your craft in a fast-learning environment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="grid grid-3">
 
-  <section id="culture" class="section">
-    <div class="container">
-      <h2 class="section-title">How we work at AhaSlides</h2>
-      <p class="section-subtitle">
-        We aim to build a high-performing environment where people can do their best work, learn quickly,
-        and support each other with honesty and respect.
-      </p>
-
-      <div class="grid-4">
-        <div class="card">
-          <h3>Disciplined Ownership</h3>
-          <p>We value initiative, accountability, and the ability to follow through with care and consistency.</p>
-        </div>
-        <div class="card">
-          <h3>Teamwork</h3>
-          <p>We work across teams, share context, and believe strong collaboration creates better outcomes.</p>
-        </div>
-        <div class="card">
-          <h3>Feedback-Seeking</h3>
-          <p>We look for feedback early, stay open to learning, and use it to improve continuously.</p>
-        </div>
-        <div class="card">
-          <h3>Global Mindset</h3>
-          <p>We build for a global audience and care about clarity, quality, and empathy in what we do.</p>
-        </div>
+      <div class="card job-card">
+        <span class="tag">Product</span>
+        <h3>Senior Business Analyst</h3>
+        <div class="meta">Full-time • Hanoi</div>
+        <p>Bridge business and product.</p>
+        <br>
+        <a href="#" class="btn btn-outline">View JD</a>
       </div>
 
-      <div class="value-pill-wrap">
-        <span class="value-pill">Smart and kind teammates</span>
-        <span class="value-pill">Real impact</span>
-        <span class="value-pill">Fast learning</span>
-        <span class="value-pill">Global product</span>
-        <span class="value-pill">Thoughtful execution</span>
+      <div class="card job-card">
+        <span class="tag">Finance</span>
+        <h3>Finance Manager</h3>
+        <div class="meta">Full-time • Hanoi</div>
+        <p>Own finance operations.</p>
+        <br>
+        <a href="#" class="btn btn-outline">View JD</a>
+      </div>
+
+      <div class="card job-card">
+        <span class="tag">Growth</span>
+        <h3>Digital Marketer</h3>
+        <div class="meta">Full-time • Hanoi</div>
+        <p>Drive user growth globally.</p>
+        <br>
+        <a href="#" class="btn btn-outline">View JD</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="culture" class="section">
+  <div class="container">
+    <h2 class="title">Culture</h2>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Disciplined Ownership</h3>
+        <p>Take responsibility and deliver results.</p>
+      </div>
+      <div class="card">
+        <h3>Feedback Culture</h3>
+        <p>We grow through honest feedback.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="jobs" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Open Roles</h2>
-      <p class="section-subtitle">
-        Explore current opportunities at AhaSlides. You can replace these sample roles with your real openings anytime.
-      </p>
-
-      <div class="job-grid">
-        <div class="job-card">
-          <span class="job-tag">Product / Hanoi</span>
-          <h3>Senior Business Analyst</h3>
-          <div class="job-meta">Full-time • On-site / Hybrid</div>
-          <p>Help turn business needs into clear product requirements, align stakeholders, and support execution across teams.</p>
-          <div class="job-actions">
-            <a class="btn-small btn-outline" href="#">View JD</a>
-            <a class="btn-small btn-dark" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank">Apply</a>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <span class="job-tag">Finance / Hanoi</span>
-          <h3>Finance Manager</h3>
-          <div class="job-meta">Full-time • On-site / Hybrid</div>
-          <p>Own finance operations, compliance, budgeting, and reporting while helping leadership make better decisions.</p>
-          <div class="job-actions">
-            <a class="btn-small btn-outline" href="#">View JD</a>
-            <a class="btn-small btn-dark" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank">Apply</a>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <span class="job-tag">Design / Hanoi</span>
-          <h3>UI/UX Designer</h3>
-          <div class="job-meta">Full-time • On-site / Hybrid</div>
-          <p>Design intuitive product experiences, improve usability, and collaborate closely with Product and Engineering.</p>
-          <div class="job-actions">
-            <a class="btn-small btn-outline" href="#">View JD</a>
-            <a class="btn-small btn-dark" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank">Apply</a>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <span class="job-tag">Growth / Hanoi</span>
-          <h3>Digital Growth Marketer</h3>
-          <div class="job-meta">Full-time • On-site / Hybrid</div>
-          <p>Drive user growth through performance marketing, experiments, and close collaboration with content and product teams.</p>
-          <div class="job-actions">
-            <a class="btn-small btn-outline" href="#">View JD</a>
-            <a class="btn-small btn-dark" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank">Apply</a>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <span class="job-tag">People / Hanoi</span>
-          <h3>People Operations</h3>
-          <div class="job-meta">Full-time • On-site / Hybrid</div>
-          <p>Help build a strong employee experience through thoughtful operations, communication, and people processes.</p>
-          <div class="job-actions">
-            <a class="btn-small btn-outline" href="#">View JD</a>
-            <a class="btn-small btn-dark" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank">Apply</a>
-          </div>
-        </div>
-
-        <div class="job-card">
-          <span class="job-tag">Open Application</span>
-          <h3>General Application</h3>
-          <div class="job-meta">Tell us where you fit best</div>
-          <p>Don’t see the right role yet? Send us your profile and tell us how you could contribute to AhaSlides.</p>
-          <div class="job-actions">
-            <a class="btn-small btn-outline" href="#apply">Learn More</a>
-            <a class="btn-small btn-dark" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank">Apply</a>
-          </div>
-        </div>
-      </div>
+<section class="section">
+  <div class="container">
+    <div class="cta">
+      <h2>Ready to join AhaSlides?</h2>
+      <p>Apply now and become part of our global team.</p>
+      <br>
+      <a href="https://forms.gle/REPLACE" class="btn btn-outline">Apply Now</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="process" class="section">
-    <div class="container">
-      <h2 class="section-title">Hiring Process</h2>
-      <p class="section-subtitle">
-        Our process may vary by role, but we aim to keep it clear, respectful, and informative for every candidate.
-      </p>
+<footer>
+  © 2026 AhaSlides Careers
+</footer>
 
-      <div class="process-grid">
-        <div class="process-card">
-          <strong>Step 1</strong>
-          Application Review
-        </div>
-        <div class="process-card">
-          <strong>Step 2</strong>
-          Intro / Screening
-        </div>
-        <div class="process-card">
-          <strong>Step 3</strong>
-          Functional Interview
-        </div>
-        <div class="process-card">
-          <strong>Step 4</strong>
-          Assessment or Work Sample
-        </div>
-        <div class="process-card">
-          <strong>Step 5</strong>
-          Offer and Onboarding
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Employer Branding</h2>
-      <p class="section-subtitle">
-        This page can also help candidates understand what it feels like to work at AhaSlides, not just what jobs are available.
-      </p>
-
-      <div class="brand-grid">
-        <div class="brand-panel">
-          <h3 style="margin-top:0; font-size:30px;">A place to do thoughtful work with good people.</h3>
-          <p>
-            Use this section to add team stories, office moments, employee quotes, benefit highlights,
-            or photos that help candidates understand your culture more clearly.
-          </p>
-        </div>
-
-        <div class="small-panels">
-          <div class="small-panel">
-            <h4>Team Stories</h4>
-            <p>Showcase how teammates grow, collaborate, and contribute across functions.</p>
-          </div>
-          <div class="small-panel">
-            <h4>Benefits Snapshot</h4>
-            <p>Highlight what candidates can expect in terms of support, wellbeing, and growth.</p>
-          </div>
-          <div class="small-panel">
-            <h4>Office Moments</h4>
-            <p>Add photos or short copy about your work environment and team culture.</p>
-          </div>
-          <div class="small-panel">
-            <h4>Candidate FAQ</h4>
-            <p>Answer common questions about process, working style, and expectations.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="apply" class="cta">
-    <div class="container">
-      <div class="cta-box">
-        <h2 style="margin-top:0; font-size:40px;">Ready to join AhaSlides?</h2>
-        <p>
-          Explore our open roles, learn more about our culture, and submit your application when you find the right fit.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank">Apply Now</a>
-          <a class="btn btn-secondary" href="mailto:people@ahaslides.com">Contact People Team</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      © 2026 AhaSlides Careers. All rights reserved.
-    </div>
-  </footer>
 </body>
 </html>
