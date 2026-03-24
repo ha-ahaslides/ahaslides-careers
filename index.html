@@ -27,6 +27,7 @@
       width: 100%;
       border-radius: 16px;
       object-fit: cover;
+      display: block;
     }
 
     .navbar {
@@ -73,7 +74,7 @@
     }
 
     .btn-primary {
-      background: #7c3aed;
+      background: linear-gradient(135deg,#7c3aed,#ec4899);
       color: white;
     }
 
@@ -119,15 +120,10 @@
       margin-bottom: 10px;
     }
 
-    .subtitle {
-      color: #6b7280;
-      max-width: 700px;
-    }
-
     .grid {
       margin-top: 40px;
       display: grid;
-      gap: 20px;
+      gap: 24px;
     }
 
     .grid-3 { grid-template-columns: repeat(3,1fr); }
@@ -136,16 +132,13 @@
       background: #ffffff;
       border: 1px solid #e5e7eb;
       border-radius: 20px;
-      padding: 24px;
-      transition: 0.2s;
+      padding: 20px;
     }
 
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: #7c3aed;
+    .card img {
+      height: 200px;
+      margin-bottom: 12px;
     }
-
-    .job-card h3 { margin: 10px 0; }
 
     .tag {
       font-size: 12px;
@@ -178,20 +171,8 @@
     .footer-content {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      font-size: 15px;
-      color: #4b5563;
-    }
-
-    .footer-item {
-      display: flex;
-      align-items: center;
       gap: 10px;
-    }
-
-    .footer-link {
-      color: #ec4899;
-      font-weight: 600;
+      color: #4b5563;
     }
 
     @media(max-width:900px){
@@ -224,7 +205,7 @@
   <div class="container hero-grid">
     <div>
       <h1>Join AhaSlides — Build Global Impact</h1>
-      <p>Work on a product used worldwide. Grow with a high-performing team.</p>
+      <p>Work on a global product and grow with a strong team.</p>
       <div class="hero-actions">
         <a href="#jobs" class="btn btn-primary">Explore Jobs</a>
         <a href="#about" class="btn btn-outline">Learn More</a>
@@ -235,95 +216,36 @@
   </div>
 </section>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2 class="title">About AhaSlides</h2>
-
-    <div class="grid grid-3">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800" />
-        <h3>Global Product</h3>
-        <p>Used worldwide.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" />
-        <h3>Ownership</h3>
-        <p>Real impact.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800" />
-        <h3>Growth</h3>
-        <p>Learn fast.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="jobs" class="section">
-  <div class="container">
-    <h2 class="title">Open Roles</h2>
-
-    <div class="grid grid-3">
-      <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800" />
-        <span class="tag">Product</span>
-        <h3>Senior BA</h3>
-      </div>
-
-      <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800" />
-        <span class="tag">Finance</span>
-        <h3>Finance Manager</h3>
-      </div>
-
-      <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800" />
-        <span class="tag">Growth</span>
-        <h3>Marketer</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="culture" class="section">
   <div class="container">
     <h2 class="title">Culture</h2>
 
     <div class="grid grid-3">
       <div class="card">
-        <img src="./culture/1.jpg" />
+        <img src="culture/_MG_2129.jpg" alt="">
         <h3>Teamwork</h3>
       </div>
 
       <div class="card">
-        <img src="./culture/2.jpg" />
+        <img src="culture/DSC04852-Enhanced-NR.jpg" alt="">
         <h3>Fun</h3>
       </div>
 
       <div class="card">
-        <img src="./culture/3.jpg" />
+        <img src="culture/DSC07507.jpg" alt="">
         <h3>Moments</h3>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="cta">
-      <h2>Join Us</h2>
-      <a href="#" class="btn btn-outline">Apply</a>
-    </div>
-  </div>
-</section>
-
 <footer>
   <div class="container footer-content">
-    <div class="footer-item">✉️ ha@ahaslides.com</div>
-    <div class="footer-item">📞 0977544062</div>
-    <div class="footer-item">📍 20A Tanjong Pagar Rd, Singapore 088443</div>
-    <div class="footer-item">📍 105 Lang Ha St, Hanoi, Vietnam</div>
-    <div class="footer-item">🔗 <span class="footer-link">ahaslides.com</span></div>
+    <div>✉️ ha@ahaslides.com</div>
+    <div>📞 0977544062</div>
+    <div>📍 20A Tanjong Pagar Rd, Singapore 088443</div>
+    <div>📍 105 Lang Ha St, Hanoi, Vietnam</div>
+    <div>🔗 ahaslides.com</div>
   </div>
 </footer>
 
