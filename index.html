@@ -47,25 +47,25 @@
     .brand {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      gap: 8px;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.2;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-align: center;
+      min-width: 140px;
     }
 
     .logo-img {
-      width: 64px;
-      height: auto;
-      border-radius: 0;
+      width: 36px;
+      height: 36px;
       object-fit: contain;
       display: block;
     }
 
     .brand-text {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       color: #1f2937;
+      line-height: 1.2;
     }
 
     .nav-links {
@@ -82,7 +82,7 @@
     }
 
     .btn-primary {
-      background: #7c3aed;
+      background: linear-gradient(135deg,#7c3aed,#ec4899);
       color: white;
     }
 
@@ -206,16 +206,12 @@
     @media(max-width:900px){
       .nav-inner {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 20px;
       }
 
       .grid-3, .hero-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 34px; }
-
-      .brand-text {
-        font-size: 18px;
-      }
     }
   </style>
 </head>
@@ -260,17 +256,17 @@
 
     <div class="grid grid-3">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800" alt="Global product" />
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800" />
         <h3>Global Product</h3>
         <p>Used worldwide.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" alt="Ownership" />
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" />
         <h3>Ownership</h3>
         <p>Real impact.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800" alt="Growth" />
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800" />
         <h3>Growth</h3>
         <p>Learn fast.</p>
       </div>
@@ -284,19 +280,19 @@
 
     <div class="grid grid-3">
       <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800" alt="Senior BA" />
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800" />
         <span class="tag">Product</span>
         <h3>Senior BA</h3>
       </div>
 
       <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800" alt="Finance Manager" />
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800" />
         <span class="tag">Finance</span>
         <h3>Finance Manager</h3>
       </div>
 
       <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800" alt="Marketer" />
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800" />
         <span class="tag">Growth</span>
         <h3>Marketer</h3>
       </div>
@@ -310,17 +306,17 @@
 
     <div class="grid grid-3">
       <div class="card">
-        <img src="./culture/1.jpg" alt="Teamwork" />
+        <img src="./culture/1.jpg" />
         <h3>Teamwork</h3>
       </div>
 
       <div class="card">
-        <img src="./culture/2.jpg" alt="Fun" />
+        <img src="./culture/2.jpg" />
         <h3>Fun</h3>
       </div>
 
       <div class="card">
-        <img src="./culture/3.jpg" alt="Moments" />
+        <img src="./culture/3.jpg" />
         <h3>Moments</h3>
       </div>
     </div>
