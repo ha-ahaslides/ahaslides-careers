@@ -1,4 +1,3 @@
-<!-- Updated version based on your provided file :contentReference[oaicite:0]{index=0} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AhaSlides Careers</title>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -25,7 +23,12 @@
       margin: auto;
     }
 
-    /* NAVBAR */
+    img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+
     .navbar {
       position: sticky;
       top: 0;
@@ -80,11 +83,16 @@
       color: #e2e8f0;
     }
 
-    /* HERO */
     .hero {
       padding: 100px 0;
       background: radial-gradient(circle at top,#1e293b,#020617);
-      text-align: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
     }
 
     .hero h1 {
@@ -93,20 +101,16 @@
     }
 
     .hero p {
-      max-width: 700px;
-      margin: auto;
       color: #94a3b8;
     }
 
     .hero-actions {
       margin-top: 30px;
       display: flex;
-      justify-content: center;
       gap: 15px;
       flex-wrap: wrap;
     }
 
-    /* SECTION */
     .section {
       padding: 80px 0;
     }
@@ -121,7 +125,6 @@
       max-width: 700px;
     }
 
-    /* GRID */
     .grid {
       margin-top: 40px;
       display: grid;
@@ -131,7 +134,6 @@
     .grid-3 { grid-template-columns: repeat(3,1fr); }
     .grid-2 { grid-template-columns: repeat(2,1fr); }
 
-    /* CARD */
     .card {
       background: #020617;
       border: 1px solid #1e293b;
@@ -145,7 +147,6 @@
       border-color: #7c3aed;
     }
 
-    /* JOB */
     .job-card h3 { margin: 10px 0; }
 
     .tag {
@@ -161,7 +162,6 @@
       margin-bottom: 10px;
     }
 
-    /* CTA */
     .cta {
       text-align: center;
       background: linear-gradient(135deg,#7c3aed,#ec4899);
@@ -176,10 +176,9 @@
     }
 
     @media(max-width:900px){
-      .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .grid-3, .grid-2, .hero-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 34px; }
     }
-
   </style>
 </head>
 
@@ -203,16 +202,19 @@
 </header>
 
 <section class="hero">
-  <div class="container">
-    <h1>Join AhaSlides — Build Global Impact</h1>
-    <p>
-      Work on a product used worldwide. Grow with a high-performing team that values ownership, clarity, and impact.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#jobs" class="btn btn-primary">Explore Jobs</a>
-      <a href="#about" class="btn btn-outline">Learn More</a>
+  <div class="container hero-grid">
+    <div>
+      <h1>Join AhaSlides — Build Global Impact</h1>
+      <p>
+        Work on a product used worldwide. Grow with a high-performing team that values ownership and impact.
+      </p>
+      <div class="hero-actions">
+        <a href="#jobs" class="btn btn-primary">Explore Jobs</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
     </div>
+
+    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200" />
   </div>
 </section>
 
@@ -220,21 +222,24 @@
   <div class="container">
     <h2 class="title">About AhaSlides</h2>
     <p class="subtitle">
-      AhaSlides is a global audience engagement platform helping teams, educators, and speakers create interactive presentations.
+      AhaSlides is a global audience engagement platform helping teams create interactive presentations.
     </p>
 
     <div class="grid grid-3">
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800" />
         <h3>Global Product</h3>
         <p>Used by millions across 100+ countries.</p>
       </div>
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" />
         <h3>High Ownership</h3>
-        <p>Everyone contributes to real business impact.</p>
+        <p>Everyone contributes to real impact.</p>
       </div>
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800" />
         <h3>Fast Growth</h3>
-        <p>Learn quickly in a high-performance environment.</p>
+        <p>Learn quickly in a high-performance team.</p>
       </div>
     </div>
   </div>
@@ -247,30 +252,27 @@
     <div class="grid grid-3">
 
       <div class="card job-card">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800" />
         <span class="tag">Product</span>
         <h3>Senior Business Analyst</h3>
         <div class="meta">Full-time • Hanoi</div>
         <p>Bridge business and product.</p>
-        <br>
-        <a href="#" class="btn btn-outline">View JD</a>
       </div>
 
       <div class="card job-card">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800" />
         <span class="tag">Finance</span>
         <h3>Finance Manager</h3>
         <div class="meta">Full-time • Hanoi</div>
         <p>Own finance operations.</p>
-        <br>
-        <a href="#" class="btn btn-outline">View JD</a>
       </div>
 
       <div class="card job-card">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800" />
         <span class="tag">Growth</span>
         <h3>Digital Marketer</h3>
         <div class="meta">Full-time • Hanoi</div>
-        <p>Drive user growth globally.</p>
-        <br>
-        <a href="#" class="btn btn-outline">View JD</a>
+        <p>Drive global growth.</p>
       </div>
 
     </div>
@@ -283,12 +285,14 @@
 
     <div class="grid grid-2">
       <div class="card">
-        <h3>Disciplined Ownership</h3>
-        <p>Take responsibility and deliver results.</p>
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800" />
+        <h3>Teamwork</h3>
+        <p>Collaborate and grow together.</p>
       </div>
       <div class="card">
-        <h3>Feedback Culture</h3>
-        <p>We grow through honest feedback.</p>
+        <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?q=80&w=800" />
+        <h3>Fun & Culture</h3>
+        <p>We build and enjoy together.</p>
       </div>
     </div>
   </div>
@@ -300,7 +304,7 @@
       <h2>Ready to join AhaSlides?</h2>
       <p>Apply now and become part of our global team.</p>
       <br>
-      <a href="https://forms.gle/REPLACE" class="btn btn-outline">Apply Now</a>
+      <a href="#" class="btn btn-outline">Apply Now</a>
     </div>
   </div>
 </section>
