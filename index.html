@@ -3,38 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AhaSlides Careers</title>
+  <title>AhaSlides Careers - Join Our Global Team</title>
+  <meta name="description" content="Join AhaSlides and build global impact. Explore our open roles, learn about our culture, and grow with a high-performing team." />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Inter", sans-serif;
-      background: #ffffff;
-      color: #1f2937;
+    /* CSS Variables for consistent theming */
+    :root {
+      --primary: #7c3aed;
+      --primary-hover: #6d28d9;
+      --secondary: #ec4899;
+      --accent: #ff2a2a; 
+      --bg-color: #fafcff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --card-bg: rgba(255, 255, 255, 0.7);
+      --card-border: rgba(255, 255, 255, 0.5);
+      --glass-bg: rgba(255, 255, 255, 0.85);
+      
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 20px 40px -5px rgba(0, 0, 0, 0.12);
+      
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
-    a { text-decoration: none; color: inherit; }
+    * { 
+      box-sizing: border-box; 
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      /* Subtle background mesh gradient */
+      background-image: 
+        radial-gradient(at 0% 0%, hsla(253,16%,7%,0.03) 0, transparent 50%), 
+        radial-gradient(at 50% 0%, hsla(225,39%,30%,0.03) 0, transparent 50%), 
+        radial-gradient(at 100% 0%, hsla(339,49%,30%,0.03) 0, transparent 50%);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      line-height: 1.2;
+      color: var(--text-main);
+    }
+
+    a { 
+      text-decoration: none; 
+      color: inherit; 
+      transition: var(--transition);
+    }
 
     .container {
-      width: min(1200px, calc(100% - 40px));
+      width: min(1200px, calc(100% - 48px));
       margin: auto;
     }
 
     img {
-      width: 100%;
+      max-width: 100%;
+      height: auto;
       border-radius: 16px;
       object-fit: cover;
+      display: block;
     }
 
+    /* ---- Navbar ---- */
     .navbar {
-      position: sticky;
+      position: fixed;
       top: 0;
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-      z-index: 999;
+      left: 0;
+      width: 100%;
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+      z-index: 1000;
+      transition: var(--transition);
     }
 
     .nav-inner {
@@ -42,176 +99,648 @@
       justify-content: space-between;
       align-items: center;
       padding: 16px 0;
+      height: 80px;
     }
 
     .brand {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
-      text-align: center;
-      min-width: 160px;
+      gap: 12px;
     }
 
     .logo-img {
-      width: 160px;   /* 👈 tăng size logo */
-      height: auto;
+      width: auto;
+      height: 36px;
       object-fit: contain;
-      display: block;
+    }
+
+    .brand-divider {
+      width: 2px;
+      height: 24px;
+      background-color: var(--text-muted);
+      opacity: 0.3;
+      margin: 0 4px;
+      border-radius: 2px;
     }
 
     .brand-text {
-      font-size: 20px;
-      font-weight: 700;
-      color: #1f2937;
-      line-height: 1.2;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      background: linear-gradient(135deg, var(--accent), #ff7b7b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
     }
 
     .nav-links {
       display: flex;
-      gap: 20px;
-      font-size: 14px;
-      color: #6b7280;
+      gap: 32px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-muted);
     }
 
+    .nav-links a:hover {
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    /* ---- Buttons ---- */
     .btn {
-      padding: 10px 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 28px;
       border-radius: 999px;
+      font-family: "Plus Jakarta Sans", sans-serif;
       font-weight: 600;
+      font-size: 15px;
+      transition: var(--transition);
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
     }
 
     .btn-primary {
-      background: linear-gradient(135deg,#7c3aed,#ec4899);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      box-shadow: 0 4px 14px 0 rgba(124, 58, 237, 0.39);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+      transform: translateY(-2px);
       color: white;
     }
 
     .btn-outline {
-      border: 1px solid #d1d5db;
-      color: #111827;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(203, 213, 225, 0.8);
+      color: var(--text-main);
     }
 
+    .btn-outline:hover {
+      background: white;
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    /* ---- Hero Section ---- */
     .hero {
-      padding: 100px 0;
-      background: linear-gradient(180deg,#ffffff,#f9fafb);
+      padding: 180px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -10%; right: -10%;
+      width: 50%; height: 70%;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.18), rgba(236, 72, 153, 0.12));
+      border-radius: 50%;
+      z-index: -1;
+      filter: blur(80px);
+      animation: floatBlob1 8s ease-in-out infinite;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -5%; left: -5%;
+      width: 35%; height: 50%;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(124, 58, 237, 0.08));
+      border-radius: 50%;
+      z-index: -1;
+      filter: blur(80px);
+      animation: floatBlob2 10s ease-in-out infinite;
+    }
+
+    @keyframes floatBlob1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(-30px, 20px) scale(1.05); }
+      66% { transform: translate(20px, -15px) scale(0.95); }
+    }
+
+    @keyframes floatBlob2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, -25px) scale(1.08); }
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 40px;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
       align-items: center;
+    }
+
+    .hero-content {
+      animation: fadeUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
     }
 
     .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 800;
+      margin-bottom: 24px;
+      letter-spacing: -1.5px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .hero p {
-      color: #6b7280;
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      max-width: 480px;
+      font-weight: 400;
     }
 
     .hero-actions {
-      margin-top: 30px;
       display: flex;
-      gap: 15px;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
+    .hero-img-wrapper {
+      position: relative;
+      animation: fadeLeft 1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    }
+
+    .hero-img-wrapper img {
+      box-shadow: var(--shadow-lg);
+      transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+      transition: var(--transition);
+    }
+
+    .hero-img-wrapper:hover img {
+      transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+    }
+
+    /* ---- Utilities ---- */
     .section {
-      padding: 80px 0;
+      padding: 100px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .tag-label {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
     }
 
     .title {
-      font-size: 34px;
-      margin-bottom: 10px;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
     }
 
     .subtitle {
-      color: #6b7280;
-      max-width: 700px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 18px;
     }
 
     .grid {
-      margin-top: 40px;
       display: grid;
-      gap: 20px;
+      gap: 32px;
     }
 
-    .grid-3 { grid-template-columns: repeat(3,1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
 
+    /* ---- Cards ---- */
     .card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 20px;
-      padding: 24px;
-      transition: 0.2s;
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 16px;
+      transition: var(--transition);
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0));
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.5;
     }
 
     .card:hover {
-      transform: translateY(-4px);
-      border-color: #7c3aed;
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px -5px rgba(124, 58, 237, 0.15), 0 0 0 1px rgba(124, 58, 237, 0.1);
+      border-color: rgba(124, 58, 237, 0.3);
     }
 
-    .job-card h3 { margin: 10px 0; }
-
-    .tag {
-      font-size: 12px;
-      background: #f3f4f6;
-      padding: 6px 10px;
-      border-radius: 999px;
+    .card img {
+      border-radius: 16px;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 2;
     }
 
-    .meta {
-      color: #7c3aed;
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-
-    .cta {
-      text-align: center;
-      background: linear-gradient(135deg,#7c3aed,#ec4899);
-      padding: 60px 20px;
-      border-radius: 30px;
-      color: white;
-    }
-
-    footer {
-      background: #f9fafb;
-      padding: 40px 0;
-      margin-top: 60px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    .footer-content {
+    .card-content {
+      padding: 0 12px 16px;
+      position: relative;
+      z-index: 2;
+      flex-grow: 1;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      font-size: 15px;
-      color: #4b5563;
     }
 
-    .footer-item {
-      display: flex;
+    .card h3 { 
+      font-size: 22px;
+      margin-bottom: 8px; 
+    }
+    
+    .card p {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    /* ---- Core Values ---- */
+    .color-1 { color: #3b82f6 !important; }
+    .bg-color-1 { background: rgba(59, 130, 246, 0.08) !important; border-color: rgba(59, 130, 246, 0.2) !important; }
+
+    .color-2 { color: #f59e0b !important; }
+    .bg-color-2 { background: rgba(245, 158, 11, 0.08) !important; border-color: rgba(245, 158, 11, 0.2) !important; }
+
+    .color-3 { color: #ec4899 !important; }
+    .bg-color-3 { background: rgba(236, 72, 153, 0.08) !important; border-color: rgba(236, 72, 153, 0.2) !important; }
+
+    .color-4 { color: #10b981 !important; }
+    .bg-color-4 { background: rgba(16, 185, 129, 0.08) !important; border-color: rgba(16, 185, 129, 0.2) !important; }
+
+    .color-5 { color: #8b5cf6 !important; }
+    .bg-color-5 { background: rgba(139, 92, 246, 0.08) !important; border-color: rgba(139, 92, 246, 0.2) !important; }
+
+    .color-6 { color: #0ea5e9 !important; }
+    .bg-color-6 { background: rgba(14, 165, 233, 0.08) !important; border-color: rgba(14, 165, 233, 0.2) !important; }
+
+    .tag-color-1 { background: rgba(59, 130, 246, 0.12) !important; color: #3b82f6 !important; }
+    .tag-color-2 { background: rgba(245, 158, 11, 0.12) !important; color: #f59e0b !important; }
+    .tag-color-3 { background: rgba(236, 72, 153, 0.12) !important; color: #ec4899 !important; }
+    .tag-color-4 { background: rgba(16, 185, 129, 0.12) !important; color: #10b981 !important; }
+    .tag-color-5 { background: rgba(139, 92, 246, 0.12) !important; color: #8b5cf6 !important; }
+    .tag-color-6 { background: rgba(14, 165, 233, 0.12) !important; color: #0ea5e9 !important; }
+
+    .value-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 80px;
       align-items: center;
-      gap: 10px;
+    }
+    .value-row:nth-child(even) {
+      direction: rtl;
+    }
+    .value-row:nth-child(even) > div {
+      direction: ltr; /* keep text reading left-to-right */
+    }
+    .value-img img {
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+    .value-content h3 {
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+    .value-content h4 {
+      font-size: 20px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    .value-content p, .value-content ul {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+    .value-content ul {
+      padding-left: 20px;
+    }
+    .value-content li {
+      margin-bottom: 8px;
+    }
+
+    @media(max-width: 900px){
+      .value-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+      }
+      .value-row:nth-child(even) {
+        direction: ltr;
+      }
+    }
+
+    /* ---- Job Cards ---- */
+    .job-card .tag {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(4px);
+      color: var(--text-main);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 999px;
+      z-index: 3;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .job-card .card-content {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .job-card h3 {
+      margin: 0;
+    }
+    
+    .job-card-arrow {
+      color: var(--primary);
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: var(--transition);
+    }
+
+    .job-card:hover .job-card-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ---- CTA Section ---- */
+    .cta-container {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background-size: 200% 200%;
+      animation: gradientShift 6s ease infinite;
+      padding: 80px 40px;
+      border-radius: 40px;
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px -10px rgba(124, 58, 237, 0.4);
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .cta-container::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%);
+      animation: rotate 20s linear infinite;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-container h2 {
+      color: white;
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+
+    .cta-container p {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 40px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-container .btn-outline {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.3);
+      color: white;
+      padding: 16px 40px;
+      font-size: 16px;
+    }
+
+    .cta-container .btn-outline:hover {
+      background: white;
+      color: var(--primary);
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      background: #ffffff;
+      padding: 80px 0 40px;
+      border-top: 1px solid rgba(226, 232, 240, 0.8);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand .brand-text {
+      margin-bottom: 16px;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 300px;
+    }
+
+    .footer-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+
+    .footer-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .footer-icon {
+      font-size: 18px;
     }
 
     .footer-link {
-      color: #ec4899;
-      font-weight: 600;
+      color: var(--text-muted);
+      transition: var(--transition);
     }
 
-    @media(max-width:900px){
-      .nav-inner {
+    .footer-link:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(226, 232, 240, 0.6);
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    /* ---- Animations ---- */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeLeft {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes rotate {
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 4px 14px 0 rgba(124, 58, 237, 0.39); }
+      50% { box-shadow: 0 6px 24px 0 rgba(124, 58, 237, 0.55); }
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* Animated gradient border on navbar scroll */
+    .navbar-scrolled {
+      border-bottom: 2px solid transparent !important;
+      border-image: linear-gradient(90deg, var(--primary), var(--secondary), #3b82f6, var(--primary)) 1;
+      animation: navBorderFlow 4s linear infinite;
+      background-size: 300% 100%;
+    }
+
+    @keyframes navBorderFlow {
+      0% { border-image-source: linear-gradient(90deg, var(--primary), var(--secondary), #3b82f6, var(--primary)); }
+      33% { border-image-source: linear-gradient(90deg, var(--secondary), #3b82f6, var(--primary), var(--secondary)); }
+      66% { border-image-source: linear-gradient(90deg, #3b82f6, var(--primary), var(--secondary), #3b82f6); }
+      100% { border-image-source: linear-gradient(90deg, var(--primary), var(--secondary), #3b82f6, var(--primary)); }
+    }
+
+    /* Pulse on CTA button */
+    .btn-primary {
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+    .btn-primary:hover {
+      animation: none;
+    }
+
+    /* Tag label shimmer */
+    .tag-label {
+      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 3s linear infinite;
+    }
+
+    /* ---- Responsive ---- */
+    @media(max-width: 992px){
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+      }
+      .hero-content {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
       }
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
 
-      .grid-3, .hero-grid { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 34px; }
+    @media(max-width: 768px){
+      .nav-links { display: none; } /* Mobile menu implementation needed if expanded */
+      .grid-3 { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero { padding: 140px 0 60px; }
+      .title { font-size: 32px; }
+      .section { padding: 60px 0; }
+      .cta-container { padding: 60px 20px; border-radius: 24px; }
+      .cta-container h2 { font-size: 36px; }
     }
   </style>
 </head>
@@ -220,127 +749,420 @@
 
 <header class="navbar">
   <div class="container nav-inner">
-    <div class="brand">
-      <img src="./logo/logo.png" class="logo-img" alt="AhaSlides logo" />
-      <div class="brand-text">AhaSlides Careers</div>
-    </div>
+    <a href="#" class="brand">
+      <!-- Fallback or actual logo -->
+      <img src="./logo/logo.png" class="logo-img" alt="AhaSlides" onerror="this.style.display='none'" />
+      <div class="brand-divider"></div>
+      <span class="brand-text">Careers</span>
+    </a>
 
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#jobs">Jobs</a>
-      <a href="#culture">Culture</a>
-    </div>
+    <nav class="nav-links">
+      <a href="#about">About Us</a>
+      <a href="#jobs">Open Roles</a>
+      <a href="#culture">Life at AhaSlides</a>
+    </nav>
 
     <a href="#jobs" class="btn btn-primary">View Jobs</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1>Join AhaSlides — Build Global Impact</h1>
-      <p>Work on a product used worldwide. Grow with a high-performing team.</p>
-      <div class="hero-actions">
-        <a href="#jobs" class="btn btn-primary">Explore Jobs</a>
-        <a href="#about" class="btn btn-outline">Learn More</a>
+<main>
+  <section class="hero">
+    <!-- Decorative floating shapes -->
+    <div style="position:absolute; top:20%; left:5%; width:80px; height:80px; border-radius:50%; background:linear-gradient(135deg, rgba(124,58,237,0.15), rgba(236,72,153,0.1)); animation: floatBlob1 6s ease-in-out infinite; pointer-events:none;"></div>
+    <div style="position:absolute; top:60%; right:10%; width:60px; height:60px; border-radius:24px; background:linear-gradient(135deg, rgba(59,130,246,0.12), rgba(139,92,246,0.08)); animation: floatBlob2 7s ease-in-out infinite; pointer-events:none; transform:rotate(45deg);"></div>
+    <div style="position:absolute; top:40%; left:50%; width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg, rgba(236,72,153,0.1), rgba(245,158,11,0.08)); animation: floatBlob1 9s ease-in-out infinite; pointer-events:none;"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Join AhaSlides &amp; <br><span>Build Global Impact</span></h1>
+        <p>We are building interactive presentation software that brings joy to millions worldwide. Come grow with a high-performing team.</p>
+        <div class="hero-actions">
+          <a href="#jobs" class="btn btn-primary">Explore Open Roles</a>
+          <a href="#about" class="btn btn-outline">Learn Our Mission</a>
+        </div>
+      </div>
+      <div class="hero-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200" alt="Team collaborating" />
       </div>
     </div>
+  </section>
 
-    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200" />
-  </div>
-</section>
-
-<section id="about" class="section">
-  <div class="container">
-    <h2 class="title">About AhaSlides</h2>
-
-    <div class="grid grid-3">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800" />
-        <h3>Global Product</h3>
-        <p>Used worldwide.</p>
+  <section id="about" class="section" style="background: white;">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-label">About Us</span>
+        <h2 class="title">Our Mission & Culture</h2>
+        <p class="subtitle">Join a fast-growing startup where your work directly impacts presenters and audiences across the globe.</p>
+        <p class="subtitle" style="margin-top:16px;">Why do we need core values? <a href="#" style="color:var(--secondary); font-weight:600;">Read more &rarr;</a></p>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" />
-        <h3>Ownership</h3>
-        <p>Real impact.</p>
+
+      <!-- Short Version Grid - Row 1 -->
+      <div class="grid grid-3" style="margin-bottom: 32px;">
+        <div class="card bg-color-1">
+          <div class="card-content" style="padding-top:16px;">
+            <h3 class="color-1" style="font-size:18px;">1. Teamwork</h3>
+            <p>Respect team routines, align on the "why" and priorities, and actively support others to remove blockers.</p>
+          </div>
+        </div>
+        <div class="card bg-color-2">
+          <div class="card-content" style="padding-top:16px;">
+            <h3 class="color-2" style="font-size:18px;">2. Disciplined Ownership</h3>
+            <p>Take initiative, use freedom responsibly, and own outcomes without waiting to be asked.</p>
+          </div>
+        </div>
+        <div class="card bg-color-3">
+          <div class="card-content" style="padding-top:16px;">
+            <h3 class="color-3" style="font-size:18px;">3. Feedback-Seeking</h3>
+            <p>Measure impact, invite feedback, and continuously improve through honest reflection.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800" />
-        <h3>Growth</h3>
-        <p>Learn fast.</p>
+      <!-- Short Version Grid - Row 2 (centered) -->
+      <div class="grid" style="grid-template-columns: repeat(2, 1fr); max-width: 780px; margin: 0 auto 100px;">
+        <div class="card bg-color-4">
+          <div class="card-content" style="padding-top:16px;">
+            <h3 class="color-4" style="font-size:18px;">4. Healthy, Caring Humans</h3>
+            <p>Take care of your health, energy, and passions beyond work. Treat each other with kindness.</p>
+          </div>
+        </div>
+        <div class="card bg-color-5">
+          <div class="card-content" style="padding-top:16px;">
+            <h3 class="color-5" style="font-size:18px;">5. Global Mindset</h3>
+            <p>Work confidently in English. Learn about other cultures while valuing our own cultural roots.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Versions -->
+      <div class="value-row">
+        <div class="value-content">
+          <h3 class="color-1">1. Teamwork</h3>
+          <p><strong>Respect team routines, align on the “why” and priorities, and actively support others to remove blockers.</strong></p>
+          <h4>What does it mean?</h4>
+          <ul>
+            <li>Follow team routines and agreements.</li>
+            <li>Align on the “why” before jumping into execution. Before starting work, make sure you understand the goal, priorities, and trade-offs. If unclear, pause and clarify.</li>
+            <li>Re-align quickly when things change. When new information, constraints, or decisions appear, communicate early and help the team adjust course together.</li>
+            <li>Actively support others and remove blockers.</li>
+            <li>Optimise for team outcomes, not individual wins.</li>
+          </ul>
+        </div>
+        <div class="value-img">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800" alt="Teamwork" />
+        </div>
+      </div>
+
+      <div class="value-row">
+        <div class="value-content">
+          <h3 class="color-2">2. Disciplined Ownership (Tự Giác)</h3>
+          <p><strong>Take initiative, use freedom responsibly, and own outcomes without waiting to be asked.</strong></p>
+          <h4>What does it mean?</h4>
+          <ul>
+            <li>Manage your time, priorities, commitments, and resources with self-discipline.</li>
+            <li>Speak up early when something needs attention. Never wait to be asked or assume someone else will handle it.</li>
+            <li>Use your freedom and privileges responsibly.</li>
+            <li>Take full ownership of outcomes. Own results, not just tasks or effort. Learn from mistakes. Don’t blame.</li>
+            <li>If you think something needs to happen, you have a duty to address it. Don’t just complain or be indifferent.</li>
+          </ul>
+        </div>
+        <div class="value-img">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800" alt="Ownership" />
+        </div>
+      </div>
+
+      <div class="value-row">
+        <div class="value-content">
+          <h3 class="color-3">3. Feedback-Seeking</h3>
+          <p><strong>Measure impact, invite feedback, and continuously improve through honest reflection.</strong></p>
+          <h4>What does it mean?</h4>
+          <ul>
+            <li>Seek feedback early, often, and obsessively - from our users, customers, stakeholders, and teammates.</li>
+            <li>Treat feedback as input for improvement, not as personal criticism. Make it safe for others to give you feedback.</li>
+            <li>Measure the impact of your work, not just activity or effort.</li>
+            <li>Continuously reflect, learn, and adjust how you work. Embrace mistakes. Treat problems as opportunities to improve. Never blame.</li>
+            <li>Give feedback constructively and timely.</li>
+          </ul>
+        </div>
+        <div class="value-img">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800" alt="Feedback" />
+        </div>
+      </div>
+
+      <div class="value-row">
+        <div class="value-content">
+          <h3 class="color-4">4. Being Healthy, Caring Humans</h3>
+          <p><strong>Take care of your health, energy, and passions beyond work. Treat each other with kindness - no toxicity, no politics.</strong></p>
+          <h4>What does it mean?</h4>
+          <ul>
+            <li>Rest properly and use your time off. Keep passions and a life beyond work.</li>
+            <li>Make space for interests, family, and personal goals outside your job - energy and creativity come from a full life.</li>
+            <li>Be kind to each other. Maintain zero tolerance for toxicity and politics.</li>
+            <li>No gossip, personal attacks, passive aggression, or power games. Raise issues openly and constructively.</li>
+          </ul>
+        </div>
+        <div class="value-img">
+          <img src="https://images.unsplash.com/photo-1494178270175-e96de2971df9?q=80&w=800" alt="Healthy Caring" />
+        </div>
+      </div>
+
+      <div class="value-row">
+        <div class="value-content">
+          <h3 class="color-5">5. Global Mindset</h3>
+          <p><strong>Work confidently in English. Learn about other cultures while valuing our own cultural roots.</strong></p>
+          <h4>What does it mean?</h4>
+          <ul>
+            <li>Use English clearly and confidently as our shared working language.</li>
+            <li>Stay curious and actively learn about other cultures.</li>
+            <li>Show cultural sensitivity and mutual respect in interactions.</li>
+            <li>Be mindful of tone and humour, especially in written communication.</li>
+            <li>Learn from global perspectives without copying any single culture or treating one way of working as the default.</li>
+          </ul>
+        </div>
+        <div class="value-img">
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800" alt="Global Mindset" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="jobs" class="section" style="background: rgba(124, 58, 237, 0.02)">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-label">Careers</span>
+        <h2 class="title">Open Positions</h2>
+        <p class="subtitle">Find your next role and help us shape the future of presentations.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <a href="https://ahaslides.com/jobs/spanish-editor/" target="_blank" class="card job-card">
+          <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800" alt="Spanish Editor Intern" />
+          <span class="tag">Internship</span>
+          <div class="card-content">
+            <h3 class="color-1">Spanish Editor Intern</h3>
+            <span class="job-card-arrow color-1">➔</span>
+          </div>
+        </a>
+
+        <a href="https://ahaslides.com/jobs/english-editor-2/" target="_blank" class="card job-card">
+          <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800" alt="English Editor Intern" />
+          <span class="tag">Internship</span>
+          <div class="card-content">
+            <h3 class="color-2">English Editor Intern</h3>
+            <span class="job-card-arrow color-2">➔</span>
+          </div>
+        </a>
+
+        <a href="https://ahaslides.com/jobs/finance-manager/" target="_blank" class="card job-card">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800" alt="Finance Manager" />
+          <span class="tag">Finance</span>
+          <div class="card-content">
+            <h3 class="color-3">Finance Manager</h3>
+            <span class="job-card-arrow color-3">➔</span>
+          </div>
+        </a>
+
+        <a href="https://ahaslides.com/jobs/software-engineer-internship-hanoi-based/" target="_blank" class="card job-card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" alt="Software Engineer Internship" />
+          <span class="tag">Engineering</span>
+          <div class="card-content">
+            <h3 class="color-4">Software Engineer Intern</h3>
+            <span class="job-card-arrow color-4">➔</span>
+          </div>
+        </a>
+
+        <a href="https://ahaslides.com/jobs/customer-support-specialist/" target="_blank" class="card job-card">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" alt="Customer Support Specialist" />
+          <span class="tag">Support</span>
+          <div class="card-content">
+            <h3 class="color-5">Customer Support Specialist</h3>
+            <span class="job-card-arrow color-5">➔</span>
+          </div>
+        </a>
+
+        <a href="https://ahaslides.com/jobs/saas-onboarding-specialist/" target="_blank" class="card job-card">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800" alt="SaaS Onboarding Specialist" />
+          <span class="tag">Growth</span>
+          <div class="card-content">
+            <h3 class="color-6">SaaS Onboarding Specialist</h3>
+            <span class="job-card-arrow color-6">➔</span>
+          </div>
+        </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="jobs" class="section">
-  <div class="container">
-    <h2 class="title">Open Roles</h2>
-
-    <div class="grid grid-3">
-      <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800" />
-        <span class="tag">Product</span>
-        <h3>Senior BA</h3>
+  <section id="culture" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-label">Our DNA</span>
+        <h2 class="title">Life at AhaSlides</h2>
+        <p class="subtitle">A culture built on transparency, playfulness, and striving for excellence.</p>
       </div>
 
-      <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800" />
-        <span class="tag">Finance</span>
-        <h3>Finance Manager</h3>
-      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <!-- Fallbacks added visually in case images don't load -->
+          <img src="./culture/1.jpg" onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800'" alt="Teamwork" />
+          <div class="card-content">
+            <h3>Teamwork</h3>
+          </div>
+        </div>
 
-      <div class="card job-card">
-        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800" />
-        <span class="tag">Growth</span>
-        <h3>Marketer</h3>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="card">
+          <img src="./culture/2.jpg" onerror="this.src='https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=800'" alt="Fun" />
+          <div class="card-content">
+            <h3>Fun & Games</h3>
+          </div>
+        </div>
 
-<section id="culture" class="section">
-  <div class="container">
-    <h2 class="title">Culture</h2>
-
-    <div class="grid grid-3">
-      <div class="card">
-        <img src="./culture/1.jpg" />
-        <h3>Teamwork</h3>
-      </div>
-
-      <div class="card">
-        <img src="./culture/2.jpg" />
-        <h3>Fun</h3>
-      </div>
-
-      <div class="card">
-        <img src="./culture/3.jpg" />
-        <h3>Moments</h3>
+        <div class="card">
+          <img src="./culture/3.jpg" onerror="this.src='https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800'" alt="Moments" />
+          <div class="card-content">
+            <h3>Unforgettable Moments</h3>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="container">
-    <div class="cta">
-      <h2>Join Us</h2>
-      <a href="#" class="btn btn-outline">Apply</a>
+  <section class="section pt-0">
+    <div class="container">
+      <div class="cta-container">
+        <div class="cta-content">
+          <h2>Ready to make an impact?</h2>
+          <p>We are always on the lookout for passionate talents. If you don't see a role that fits but still want to join, drop your CV.</p>
+          <a href="mailto:ha@ahaslides.com" class="btn btn-outline">Send Your CV</a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
-  <div class="container footer-content">
-    <div class="footer-item">✉️ ha@ahaslides.com</div>
-    <div class="footer-item">📞 0977544062</div>
-    <div class="footer-item">📍 20A Tanjong Pagar Rd, Singapore 088443</div>
-    <div class="footer-item">📍 105 Lang Ha St, Hanoi, Vietnam</div>
-    <div class="footer-item">🔗 <span class="footer-link">ahaslides.com</span></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img src="./logo/logo.png" class="logo-img" alt="AhaSlides" style="height: 36px;" onerror="this.style.display='none'" />
+        <p style="margin-top: 16px;">Empowering presenters. Engaging audiences. Join our mission today.</p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contact</h4>
+        <ul class="footer-list">
+          <li>
+            <span class="footer-icon">✉️</span>
+            <span><a href="mailto:ha@ahaslides.com" class="footer-link">ha@ahaslides.com</a></span>
+          </li>
+          <li>
+            <span class="footer-icon">📞</span>
+            <span>0977 544 062</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Locations</h4>
+        <ul class="footer-list">
+          <li>
+            <span class="footer-icon">📍</span>
+            <span>20A Tanjong Pagar Rd, Singapore 088443</span>
+          </li>
+          <li>
+            <span class="footer-icon">📍</span>
+            <span>105 Lang Ha St, Hanoi, Vietnam</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 AhaSlides. All rights reserved. <br> <a href="https://ahaslides.com" target="_blank" style="color:var(--primary); font-weight: 500; margin-top: 8px; display: inline-block;">Explore our main website &rarr;</a>
+    </div>
   </div>
 </footer>
 
+<script>
+  // Navbar scroll effect with animated gradient border
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+      navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.style.background = 'rgba(255, 255, 255, 0.85)';
+      navbar.style.boxShadow = 'none';
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+
+  // Scroll reveal animation
+  const revealElements = document.querySelectorAll('.section-header, .card, .value-row, .cta-container, .footer-grid');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal', 'visible');
+        // Stagger children cards
+        const cards = entry.target.parentElement?.querySelectorAll('.card');
+        if (cards) {
+          cards.forEach((card, i) => {
+            card.classList.add('reveal', 'visible');
+            card.style.transitionDelay = `${i * 0.1}s`;
+          });
+        }
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+  // Initially hide elements
+  revealElements.forEach(el => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+  });
+
+  // Parallax effect on hero image
+  const heroImg = document.querySelector('.hero-img-wrapper img');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    if (heroImg && scrolled < 800) {
+      heroImg.style.transform = `perspective(1000px) rotateY(${-5 + scrolled * 0.008}deg) rotateX(${5 - scrolled * 0.005}deg) translateY(${scrolled * 0.03}px)`;
+    }
+  });
+
+  // Smooth counter animation for a fun touch
+  const style = document.createElement('style');
+  style.textContent = `
+    .card:hover img {
+      transform: scale(1.05);
+      transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .value-img img {
+      transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .value-img:hover img {
+      transform: scale(1.03);
+    }
+    .nav-links a {
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+  `;
+  document.head.appendChild(style);
+</script>
 </body>
 </html>
