@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AhaSlides Careers - Join Our Global Team</title>
-  <meta name="description" content="Join AhaSlides and build global impact. Explore our open roles, learn about our culture, and grow with a high-performing team." />
+  <meta name="description"
+    content="Join AhaSlides and build global impact. Explore our open roles, learn about our culture, and grow with a high-performing team." />
 
   <!-- Modern Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <style>
     /* CSS Variables for consistent theming */
@@ -17,23 +20,23 @@
       --primary: #7c3aed;
       --primary-hover: #6d28d9;
       --secondary: #ec4899;
-      --accent: #ff2a2a; 
+      --accent: #ff2a2a;
       --bg-color: #fafcff;
       --text-main: #0f172a;
       --text-muted: #64748b;
       --card-bg: rgba(255, 255, 255, 0.7);
       --card-border: rgba(255, 255, 255, 0.5);
       --glass-bg: rgba(255, 255, 255, 0.85);
-      
+
       --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
       --shadow-md: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
       --shadow-lg: 0 20px 40px -5px rgba(0, 0, 0, 0.12);
-      
+
       --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
-    * { 
-      box-sizing: border-box; 
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
@@ -49,21 +52,24 @@
       line-height: 1.6;
       overflow-x: hidden;
       /* Subtle background mesh gradient */
-      background-image: 
-        radial-gradient(at 0% 0%, hsla(253,16%,7%,0.03) 0, transparent 50%), 
-        radial-gradient(at 50% 0%, hsla(225,39%,30%,0.03) 0, transparent 50%), 
-        radial-gradient(at 100% 0%, hsla(339,49%,30%,0.03) 0, transparent 50%);
+      background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 0.03) 0, transparent 50%),
+        radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 0.03) 0, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 0.03) 0, transparent 50%);
     }
 
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       font-family: "Plus Jakarta Sans", sans-serif;
       line-height: 1.2;
       color: var(--text-main);
     }
 
-    a { 
-      text-decoration: none; 
-      color: inherit; 
+    a {
+      text-decoration: none;
+      color: inherit;
       transition: var(--transition);
     }
 
@@ -204,8 +210,10 @@
     .hero::before {
       content: '';
       position: absolute;
-      top: -10%; right: -10%;
-      width: 50%; height: 70%;
+      top: -10%;
+      right: -10%;
+      width: 50%;
+      height: 70%;
       background: linear-gradient(135deg, rgba(124, 58, 237, 0.18), rgba(236, 72, 153, 0.12));
       border-radius: 50%;
       z-index: -1;
@@ -216,8 +224,10 @@
     .hero::after {
       content: '';
       position: absolute;
-      bottom: -5%; left: -5%;
-      width: 35%; height: 50%;
+      bottom: -5%;
+      left: -5%;
+      width: 35%;
+      height: 50%;
       background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(124, 58, 237, 0.08));
       border-radius: 50%;
       z-index: -1;
@@ -226,14 +236,31 @@
     }
 
     @keyframes floatBlob1 {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      33% { transform: translate(-30px, 20px) scale(1.05); }
-      66% { transform: translate(20px, -15px) scale(0.95); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      33% {
+        transform: translate(-30px, 20px) scale(1.05);
+      }
+
+      66% {
+        transform: translate(20px, -15px) scale(0.95);
+      }
     }
 
     @keyframes floatBlob2 {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(30px, -25px) scale(1.08); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(30px, -25px) scale(1.08);
+      }
     }
 
     .hero-grid {
@@ -329,7 +356,9 @@
       gap: 32px;
     }
 
-    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     /* ---- Cards ---- */
     .card {
@@ -350,9 +379,11 @@
     .card::after {
       content: '';
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: linear-gradient(to bottom right, rgba(255,255,255,0.8), rgba(255,255,255,0));
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
       pointer-events: none;
       z-index: 1;
       opacity: 0.5;
@@ -382,41 +413,100 @@
       flex-direction: column;
     }
 
-    .card h3 { 
+    .card h3 {
       font-size: 22px;
-      margin-bottom: 8px; 
+      margin-bottom: 8px;
     }
-    
+
     .card p {
       color: var(--text-muted);
       font-size: 15px;
     }
 
     /* ---- Core Values ---- */
-    .color-1 { color: #3b82f6 !important; }
-    .bg-color-1 { background: rgba(59, 130, 246, 0.08) !important; border-color: rgba(59, 130, 246, 0.2) !important; }
+    .color-1 {
+      color: #3b82f6 !important;
+    }
 
-    .color-2 { color: #f59e0b !important; }
-    .bg-color-2 { background: rgba(245, 158, 11, 0.08) !important; border-color: rgba(245, 158, 11, 0.2) !important; }
+    .bg-color-1 {
+      background: rgba(59, 130, 246, 0.08) !important;
+      border-color: rgba(59, 130, 246, 0.2) !important;
+    }
 
-    .color-3 { color: #ec4899 !important; }
-    .bg-color-3 { background: rgba(236, 72, 153, 0.08) !important; border-color: rgba(236, 72, 153, 0.2) !important; }
+    .color-2 {
+      color: #f59e0b !important;
+    }
 
-    .color-4 { color: #10b981 !important; }
-    .bg-color-4 { background: rgba(16, 185, 129, 0.08) !important; border-color: rgba(16, 185, 129, 0.2) !important; }
+    .bg-color-2 {
+      background: rgba(245, 158, 11, 0.08) !important;
+      border-color: rgba(245, 158, 11, 0.2) !important;
+    }
 
-    .color-5 { color: #8b5cf6 !important; }
-    .bg-color-5 { background: rgba(139, 92, 246, 0.08) !important; border-color: rgba(139, 92, 246, 0.2) !important; }
+    .color-3 {
+      color: #ec4899 !important;
+    }
 
-    .color-6 { color: #0ea5e9 !important; }
-    .bg-color-6 { background: rgba(14, 165, 233, 0.08) !important; border-color: rgba(14, 165, 233, 0.2) !important; }
+    .bg-color-3 {
+      background: rgba(236, 72, 153, 0.08) !important;
+      border-color: rgba(236, 72, 153, 0.2) !important;
+    }
 
-    .tag-color-1 { background: rgba(59, 130, 246, 0.12) !important; color: #3b82f6 !important; }
-    .tag-color-2 { background: rgba(245, 158, 11, 0.12) !important; color: #f59e0b !important; }
-    .tag-color-3 { background: rgba(236, 72, 153, 0.12) !important; color: #ec4899 !important; }
-    .tag-color-4 { background: rgba(16, 185, 129, 0.12) !important; color: #10b981 !important; }
-    .tag-color-5 { background: rgba(139, 92, 246, 0.12) !important; color: #8b5cf6 !important; }
-    .tag-color-6 { background: rgba(14, 165, 233, 0.12) !important; color: #0ea5e9 !important; }
+    .color-4 {
+      color: #10b981 !important;
+    }
+
+    .bg-color-4 {
+      background: rgba(16, 185, 129, 0.08) !important;
+      border-color: rgba(16, 185, 129, 0.2) !important;
+    }
+
+    .color-5 {
+      color: #8b5cf6 !important;
+    }
+
+    .bg-color-5 {
+      background: rgba(139, 92, 246, 0.08) !important;
+      border-color: rgba(139, 92, 246, 0.2) !important;
+    }
+
+    .color-6 {
+      color: #0ea5e9 !important;
+    }
+
+    .bg-color-6 {
+      background: rgba(14, 165, 233, 0.08) !important;
+      border-color: rgba(14, 165, 233, 0.2) !important;
+    }
+
+    .tag-color-1 {
+      background: rgba(59, 130, 246, 0.12) !important;
+      color: #3b82f6 !important;
+    }
+
+    .tag-color-2 {
+      background: rgba(245, 158, 11, 0.12) !important;
+      color: #f59e0b !important;
+    }
+
+    .tag-color-3 {
+      background: rgba(236, 72, 153, 0.12) !important;
+      color: #ec4899 !important;
+    }
+
+    .tag-color-4 {
+      background: rgba(16, 185, 129, 0.12) !important;
+      color: #10b981 !important;
+    }
+
+    .tag-color-5 {
+      background: rgba(139, 92, 246, 0.12) !important;
+      color: #8b5cf6 !important;
+    }
+
+    .tag-color-6 {
+      background: rgba(14, 165, 233, 0.12) !important;
+      color: #0ea5e9 !important;
+    }
 
     .value-row {
       display: grid;
@@ -425,12 +515,16 @@
       margin-bottom: 80px;
       align-items: center;
     }
+
     .value-row:nth-child(even) {
       direction: rtl;
     }
-    .value-row:nth-child(even) > div {
-      direction: ltr; /* keep text reading left-to-right */
+
+    .value-row:nth-child(even)>div {
+      direction: ltr;
+      /* keep text reading left-to-right */
     }
+
     .value-img img {
       border-radius: 24px;
       box-shadow: var(--shadow-lg);
@@ -438,34 +532,41 @@
       aspect-ratio: 4/3;
       object-fit: cover;
     }
+
     .value-content h3 {
       font-size: 32px;
       margin-bottom: 16px;
       color: var(--primary);
     }
+
     .value-content h4 {
       font-size: 20px;
       margin-top: 24px;
       margin-bottom: 8px;
     }
-    .value-content p, .value-content ul {
+
+    .value-content p,
+    .value-content ul {
       color: var(--text-muted);
       margin-bottom: 16px;
       font-size: 16px;
     }
+
     .value-content ul {
       padding-left: 20px;
     }
+
     .value-content li {
       margin-bottom: 8px;
     }
 
-    @media(max-width: 900px){
+    @media(max-width: 900px) {
       .value-row {
         grid-template-columns: 1fr;
         gap: 30px;
         margin-bottom: 60px;
       }
+
       .value-row:nth-child(even) {
         direction: ltr;
       }
@@ -496,7 +597,7 @@
     .job-card h3 {
       margin: 0;
     }
-    
+
     .job-card-arrow {
       color: var(--primary);
       opacity: 0;
@@ -524,16 +625,25 @@
     }
 
     @keyframes gradientShift {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
     }
 
     .cta-container::before {
       content: '';
       position: absolute;
-      top: -50%; left: -50%;
-      width: 200%; height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%);
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 60%);
       animation: rotate 20s linear infinite;
     }
 
@@ -558,8 +668,8 @@
     }
 
     .cta-container .btn-outline {
-      background: rgba(255,255,255,0.1);
-      border-color: rgba(255,255,255,0.3);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.3);
       color: white;
       padding: 16px 40px;
       font-size: 16px;
@@ -640,27 +750,130 @@
 
     /* ---- Animations ---- */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeLeft {
-      from { opacity: 0; transform: translateX(40px); }
-      to { opacity: 1; transform: translateX(0); }
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     @keyframes rotate {
-      100% { transform: rotate(360deg); }
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     @keyframes pulse {
-      0%, 100% { box-shadow: 0 4px 14px 0 rgba(124, 58, 237, 0.39); }
-      50% { box-shadow: 0 6px 24px 0 rgba(124, 58, 237, 0.55); }
+
+      0%,
+      100% {
+        box-shadow: 0 4px 14px 0 rgba(124, 58, 237, 0.39);
+      }
+
+      50% {
+        box-shadow: 0 6px 24px 0 rgba(124, 58, 237, 0.55);
+      }
     }
 
     @keyframes shimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
+      0% {
+        background-position: -200% 0;
+      }
+
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    /* ---- Scroll Progress Bar ---- */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--secondary), #3b82f6, var(--primary));
+      background-size: 300% 100%;
+      animation: gradientShift 4s linear infinite;
+      z-index: 9999;
+      transition: width 0.1s linear;
+      box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+    }
+
+    /* ---- Cursor Glow Follower ---- */
+    .cursor-glow {
+      position: fixed;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, rgba(236, 72, 153, 0.04) 40%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      transform: translate(-50%, -50%);
+      transition: transform 0.05s linear, opacity 0.3s ease;
+      opacity: 0;
+      will-change: transform;
+    }
+
+    .cursor-glow.active {
+      opacity: 1;
+    }
+
+    /* ---- 3D Tilt Cards ---- */
+    .card {
+      transform-style: preserve-3d;
+      perspective: 800px;
+    }
+
+    .card .card-content,
+    .card img {
+      transform: translateZ(20px);
+    }
+
+    /* ---- Magnetic Button ---- */
+    .btn {
+      will-change: transform;
+    }
+
+    /* ---- Word Reveal Animation ---- */
+    .word-reveal .word {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px) rotateX(-15deg);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .word-reveal.revealed .word {
+      opacity: 1;
+      transform: translateY(0) rotateX(0deg);
+    }
+
+    /* ---- Section Scale Entrance ---- */
+    .section-scale {
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .section-scale.in-view {
+      opacity: 1;
+      transform: scale(1);
     }
 
     /* Scroll reveal */
@@ -669,15 +882,57 @@
       transform: translateY(40px);
       transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
+
     .reveal.visible {
       opacity: 1;
       transform: translateY(0);
     }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
-    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    .reveal-delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: 0.4s;
+    }
+
+    .reveal-delay-5 {
+      transition-delay: 0.5s;
+    }
+
+    /* ---- Hover Glow on Cards ---- */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: var(--mouse-y, 50%);
+      left: var(--mouse-x, 50%);
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.12), transparent 70%);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 0;
+      border-radius: 50%;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    /* ---- Smooth Parallax Image ---- */
+    .value-img img {
+      will-change: transform;
+    }
 
     /* Animated gradient border on navbar scroll */
     .navbar-scrolled {
@@ -688,16 +943,28 @@
     }
 
     @keyframes navBorderFlow {
-      0% { border-image-source: linear-gradient(90deg, var(--primary), var(--secondary), #3b82f6, var(--primary)); }
-      33% { border-image-source: linear-gradient(90deg, var(--secondary), #3b82f6, var(--primary), var(--secondary)); }
-      66% { border-image-source: linear-gradient(90deg, #3b82f6, var(--primary), var(--secondary), #3b82f6); }
-      100% { border-image-source: linear-gradient(90deg, var(--primary), var(--secondary), #3b82f6, var(--primary)); }
+      0% {
+        border-image-source: linear-gradient(90deg, var(--primary), var(--secondary), #3b82f6, var(--primary));
+      }
+
+      33% {
+        border-image-source: linear-gradient(90deg, var(--secondary), #3b82f6, var(--primary), var(--secondary));
+      }
+
+      66% {
+        border-image-source: linear-gradient(90deg, #3b82f6, var(--primary), var(--secondary), #3b82f6);
+      }
+
+      100% {
+        border-image-source: linear-gradient(90deg, var(--primary), var(--secondary), #3b82f6, var(--primary));
+      }
     }
 
     /* Pulse on CTA button */
     .btn-primary {
       animation: pulse 2.5s ease-in-out infinite;
     }
+
     .btn-primary:hover {
       animation: none;
     }
@@ -713,436 +980,758 @@
     }
 
     /* ---- Responsive ---- */
-    @media(max-width: 992px){
+    @media(max-width: 992px) {
       .hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 40px;
       }
+
       .hero-content {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
+
       .hero p {
         margin-left: auto;
         margin-right: auto;
       }
-      .grid-3 { grid-template-columns: repeat(2, 1fr); }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
+
+      .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
-    @media(max-width: 768px){
-      .nav-links { display: none; } /* Mobile menu implementation needed if expanded */
-      .grid-3 { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-      .hero { padding: 140px 0 60px; }
-      .title { font-size: 32px; }
-      .section { padding: 60px 0; }
-      .cta-container { padding: 60px 20px; border-radius: 24px; }
-      .cta-container h2 { font-size: 36px; }
+    @media(max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      /* Mobile menu implementation needed if expanded */
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero {
+        padding: 140px 0 60px;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .cta-container {
+        padding: 60px 20px;
+        border-radius: 24px;
+      }
+
+      .cta-container h2 {
+        font-size: 36px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header class="navbar">
-  <div class="container nav-inner">
-    <a href="#" class="brand">
-      <!-- Fallback or actual logo -->
-      <img src="./logo/logo.png" class="logo-img" alt="AhaSlides" onerror="this.style.display='none'" />
-      <div class="brand-divider"></div>
-      <span class="brand-text">Careers</span>
-    </a>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-    <nav class="nav-links">
-      <a href="#about">About Us</a>
-      <a href="#jobs">Open Roles</a>
-      <a href="#culture">Life at AhaSlides</a>
-    </nav>
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-    <a href="#jobs" class="btn btn-primary">View Jobs</a>
-  </div>
-</header>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <!-- Fallback or actual logo -->
+        <img src="./logo/logo.png" class="logo-img" alt="AhaSlides" onerror="this.style.display='none'" />
+        <div class="brand-divider"></div>
+        <span class="brand-text">Careers</span>
+      </a>
 
-<main>
-  <section class="hero">
-    <!-- Decorative floating shapes -->
-    <div style="position:absolute; top:20%; left:5%; width:80px; height:80px; border-radius:50%; background:linear-gradient(135deg, rgba(124,58,237,0.15), rgba(236,72,153,0.1)); animation: floatBlob1 6s ease-in-out infinite; pointer-events:none;"></div>
-    <div style="position:absolute; top:60%; right:10%; width:60px; height:60px; border-radius:24px; background:linear-gradient(135deg, rgba(59,130,246,0.12), rgba(139,92,246,0.08)); animation: floatBlob2 7s ease-in-out infinite; pointer-events:none; transform:rotate(45deg);"></div>
-    <div style="position:absolute; top:40%; left:50%; width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg, rgba(236,72,153,0.1), rgba(245,158,11,0.08)); animation: floatBlob1 9s ease-in-out infinite; pointer-events:none;"></div>
+      <nav class="nav-links">
+        <a href="#about">About Us</a>
+        <a href="#jobs">Open Roles</a>
+        <a href="#culture">Life at AhaSlides</a>
+      </nav>
 
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <h1>Join AhaSlides &amp; <br><span>Build Global Impact</span></h1>
-        <p>We are building interactive presentation software that brings joy to millions worldwide. Come grow with a high-performing team.</p>
-        <div class="hero-actions">
-          <a href="#jobs" class="btn btn-primary">Explore Open Roles</a>
-          <a href="#about" class="btn btn-outline">Learn Our Mission</a>
+      <a href="#jobs" class="btn btn-primary">View Jobs</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Decorative floating shapes -->
+      <div
+        style="position:absolute; top:20%; left:5%; width:80px; height:80px; border-radius:50%; background:linear-gradient(135deg, rgba(124,58,237,0.15), rgba(236,72,153,0.1)); animation: floatBlob1 6s ease-in-out infinite; pointer-events:none;">
+      </div>
+      <div
+        style="position:absolute; top:60%; right:10%; width:60px; height:60px; border-radius:24px; background:linear-gradient(135deg, rgba(59,130,246,0.12), rgba(139,92,246,0.08)); animation: floatBlob2 7s ease-in-out infinite; pointer-events:none; transform:rotate(45deg);">
+      </div>
+      <div
+        style="position:absolute; top:40%; left:50%; width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg, rgba(236,72,153,0.1), rgba(245,158,11,0.08)); animation: floatBlob1 9s ease-in-out infinite; pointer-events:none;">
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Join AhaSlides &amp; <br><span>Build Global Impact</span></h1>
+          <p>We are building interactive presentation software that brings joy to millions worldwide. Come grow with a
+            high-performing team.</p>
+          <div class="hero-actions">
+            <a href="#jobs" class="btn btn-primary">Explore Open Roles</a>
+            <a href="#about" class="btn btn-outline">Learn Our Mission</a>
+          </div>
+        </div>
+        <div class="hero-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200"
+            alt="Team collaborating" />
         </div>
       </div>
-      <div class="hero-img-wrapper">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200" alt="Team collaborating" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section" style="background: white;">
+    <section id="about" class="section" style="background: white;">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag-label">About Us</span>
+          <h2 class="title">Our Mission & Culture</h2>
+          <p class="subtitle">Join a fast-growing startup where your work directly impacts presenters and audiences
+            across the globe.</p>
+          <p class="subtitle" style="margin-top:16px;">Why do we need core values? <a href="#"
+              style="color:var(--secondary); font-weight:600;">Read more &rarr;</a></p>
+        </div>
+
+        <!-- Short Version Grid - Row 1 -->
+        <div class="grid grid-3" style="margin-bottom: 32px;">
+          <div class="card bg-color-1">
+            <div class="card-content" style="padding-top:16px;">
+              <h3 class="color-1" style="font-size:18px;">1. Teamwork</h3>
+              <p>Respect team routines, align on the "why" and priorities, and actively support others to remove
+                blockers.</p>
+            </div>
+          </div>
+          <div class="card bg-color-2">
+            <div class="card-content" style="padding-top:16px;">
+              <h3 class="color-2" style="font-size:18px;">2. Disciplined Ownership</h3>
+              <p>Take initiative, use freedom responsibly, and own outcomes without waiting to be asked.</p>
+            </div>
+          </div>
+          <div class="card bg-color-3">
+            <div class="card-content" style="padding-top:16px;">
+              <h3 class="color-3" style="font-size:18px;">3. Feedback-Seeking</h3>
+              <p>Measure impact, invite feedback, and continuously improve through honest reflection.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Short Version Grid - Row 2 (centered) -->
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr); max-width: 780px; margin: 0 auto 100px;">
+          <div class="card bg-color-4">
+            <div class="card-content" style="padding-top:16px;">
+              <h3 class="color-4" style="font-size:18px;">4. Healthy, Caring Humans</h3>
+              <p>Take care of your health, energy, and passions beyond work. Treat each other with kindness.</p>
+            </div>
+          </div>
+          <div class="card bg-color-5">
+            <div class="card-content" style="padding-top:16px;">
+              <h3 class="color-5" style="font-size:18px;">5. Global Mindset</h3>
+              <p>Work confidently in English. Learn about other cultures while valuing our own cultural roots.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Versions -->
+        <div class="value-row">
+          <div class="value-content">
+            <h3 class="color-1">1. Teamwork</h3>
+            <p><strong>Respect team routines, align on the “why” and priorities, and actively support others to remove
+                blockers.</strong></p>
+            <h4>What does it mean?</h4>
+            <ul>
+              <li>Follow team routines and agreements.</li>
+              <li>Align on the “why” before jumping into execution. Before starting work, make sure you understand the
+                goal, priorities, and trade-offs. If unclear, pause and clarify.</li>
+              <li>Re-align quickly when things change. When new information, constraints, or decisions appear,
+                communicate early and help the team adjust course together.</li>
+              <li>Actively support others and remove blockers.</li>
+              <li>Optimise for team outcomes, not individual wins.</li>
+            </ul>
+          </div>
+          <div class="value-img">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800" alt="Teamwork" />
+          </div>
+        </div>
+
+        <div class="value-row">
+          <div class="value-content">
+            <h3 class="color-2">2. Disciplined Ownership (Tự Giác)</h3>
+            <p><strong>Take initiative, use freedom responsibly, and own outcomes without waiting to be asked.</strong>
+            </p>
+            <h4>What does it mean?</h4>
+            <ul>
+              <li>Manage your time, priorities, commitments, and resources with self-discipline.</li>
+              <li>Speak up early when something needs attention. Never wait to be asked or assume someone else will
+                handle it.</li>
+              <li>Use your freedom and privileges responsibly.</li>
+              <li>Take full ownership of outcomes. Own results, not just tasks or effort. Learn from mistakes. Don’t
+                blame.</li>
+              <li>If you think something needs to happen, you have a duty to address it. Don’t just complain or be
+                indifferent.</li>
+            </ul>
+          </div>
+          <div class="value-img">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800" alt="Ownership" />
+          </div>
+        </div>
+
+        <div class="value-row">
+          <div class="value-content">
+            <h3 class="color-3">3. Feedback-Seeking</h3>
+            <p><strong>Measure impact, invite feedback, and continuously improve through honest reflection.</strong></p>
+            <h4>What does it mean?</h4>
+            <ul>
+              <li>Seek feedback early, often, and obsessively - from our users, customers, stakeholders, and teammates.
+              </li>
+              <li>Treat feedback as input for improvement, not as personal criticism. Make it safe for others to give
+                you feedback.</li>
+              <li>Measure the impact of your work, not just activity or effort.</li>
+              <li>Continuously reflect, learn, and adjust how you work. Embrace mistakes. Treat problems as
+                opportunities to improve. Never blame.</li>
+              <li>Give feedback constructively and timely.</li>
+            </ul>
+          </div>
+          <div class="value-img">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800" alt="Feedback" />
+          </div>
+        </div>
+
+        <div class="value-row">
+          <div class="value-content">
+            <h3 class="color-4">4. Being Healthy, Caring Humans</h3>
+            <p><strong>Take care of your health, energy, and passions beyond work. Treat each other with kindness - no
+                toxicity, no politics.</strong></p>
+            <h4>What does it mean?</h4>
+            <ul>
+              <li>Rest properly and use your time off. Keep passions and a life beyond work.</li>
+              <li>Make space for interests, family, and personal goals outside your job - energy and creativity come
+                from a full life.</li>
+              <li>Be kind to each other. Maintain zero tolerance for toxicity and politics.</li>
+              <li>No gossip, personal attacks, passive aggression, or power games. Raise issues openly and
+                constructively.</li>
+            </ul>
+          </div>
+          <div class="value-img">
+            <img src="https://images.unsplash.com/photo-1494178270175-e96de2971df9?q=80&w=800" alt="Healthy Caring" />
+          </div>
+        </div>
+
+        <div class="value-row">
+          <div class="value-content">
+            <h3 class="color-5">5. Global Mindset</h3>
+            <p><strong>Work confidently in English. Learn about other cultures while valuing our own cultural
+                roots.</strong></p>
+            <h4>What does it mean?</h4>
+            <ul>
+              <li>Use English clearly and confidently as our shared working language.</li>
+              <li>Stay curious and actively learn about other cultures.</li>
+              <li>Show cultural sensitivity and mutual respect in interactions.</li>
+              <li>Be mindful of tone and humour, especially in written communication.</li>
+              <li>Learn from global perspectives without copying any single culture or treating one way of working as
+                the default.</li>
+            </ul>
+          </div>
+          <div class="value-img">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800" alt="Global Mindset" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="jobs" class="section" style="background: rgba(124, 58, 237, 0.02)">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag-label">Careers</span>
+          <h2 class="title">Open Positions</h2>
+          <p class="subtitle">Find your next role and help us shape the future of presentations.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <a href="https://ahaslides.com/jobs/spanish-editor/" target="_blank" class="card job-card">
+            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800"
+              alt="Spanish Editor Intern" />
+            <span class="tag">Internship</span>
+            <div class="card-content">
+              <h3 class="color-1">Spanish Editor Intern</h3>
+              <span class="job-card-arrow color-1">➔</span>
+            </div>
+          </a>
+
+          <a href="https://ahaslides.com/jobs/english-editor-2/" target="_blank" class="card job-card">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800"
+              alt="English Editor Intern" />
+            <span class="tag">Internship</span>
+            <div class="card-content">
+              <h3 class="color-2">English Editor Intern</h3>
+              <span class="job-card-arrow color-2">➔</span>
+            </div>
+          </a>
+
+          <a href="https://ahaslides.com/jobs/finance-manager/" target="_blank" class="card job-card">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800" alt="Finance Manager" />
+            <span class="tag">Finance</span>
+            <div class="card-content">
+              <h3 class="color-3">Finance Manager</h3>
+              <span class="job-card-arrow color-3">➔</span>
+            </div>
+          </a>
+
+          <a href="https://ahaslides.com/jobs/software-engineer-internship-hanoi-based/" target="_blank"
+            class="card job-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800"
+              alt="Software Engineer Internship" />
+            <span class="tag">Engineering</span>
+            <div class="card-content">
+              <h3 class="color-4">Software Engineer Intern</h3>
+              <span class="job-card-arrow color-4">➔</span>
+            </div>
+          </a>
+
+          <a href="https://ahaslides.com/jobs/customer-support-specialist/" target="_blank" class="card job-card">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800"
+              alt="Customer Support Specialist" />
+            <span class="tag">Support</span>
+            <div class="card-content">
+              <h3 class="color-5">Customer Support Specialist</h3>
+              <span class="job-card-arrow color-5">➔</span>
+            </div>
+          </a>
+
+          <a href="https://ahaslides.com/jobs/saas-onboarding-specialist/" target="_blank" class="card job-card">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800"
+              alt="SaaS Onboarding Specialist" />
+            <span class="tag">Growth</span>
+            <div class="card-content">
+              <h3 class="color-6">SaaS Onboarding Specialist</h3>
+              <span class="job-card-arrow color-6">➔</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="culture" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag-label">Our DNA</span>
+          <h2 class="title">Life at AhaSlides</h2>
+          <p class="subtitle">A culture built on transparency, playfulness, and striving for excellence.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <!-- Fallbacks added visually in case images don't load -->
+            <img src="./culture/1.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800'"
+              alt="Teamwork" />
+            <div class="card-content">
+              <h3>Teamwork</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./culture/2.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=800'" alt="Fun" />
+            <div class="card-content">
+              <h3>Fun & Games</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./culture/3.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800'"
+              alt="Moments" />
+            <div class="card-content">
+              <h3>Unforgettable Moments</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="cta-container">
+          <div class="cta-content">
+            <h2>Ready to make an impact?</h2>
+            <p>We are always on the lookout for passionate talents. If you don't see a role that fits but still want to
+              join, drop your CV.</p>
+            <a href="mailto:hi@ahaslides.com" class="btn btn-outline">Send Your CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <div class="container">
-      <div class="section-header">
-        <span class="tag-label">About Us</span>
-        <h2 class="title">Our Mission & Culture</h2>
-        <p class="subtitle">Join a fast-growing startup where your work directly impacts presenters and audiences across the globe.</p>
-        <p class="subtitle" style="margin-top:16px;">Why do we need core values? <a href="#" style="color:var(--secondary); font-weight:600;">Read more &rarr;</a></p>
-      </div>
+      <div class="footer-grid">
+        <div class="footer-brand"
+          style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <img src="./logo/logo.png" class="logo-img" alt="AhaSlides" style="height: 36px;"
+            onerror="this.style.display='none'" />
+          <p style="margin-top: 16px;">Empowering presenters. Engaging audiences. Join our mission today.</p>
+        </div>
 
-      <!-- Short Version Grid - Row 1 -->
-      <div class="grid grid-3" style="margin-bottom: 32px;">
-        <div class="card bg-color-1">
-          <div class="card-content" style="padding-top:16px;">
-            <h3 class="color-1" style="font-size:18px;">1. Teamwork</h3>
-            <p>Respect team routines, align on the "why" and priorities, and actively support others to remove blockers.</p>
-          </div>
-        </div>
-        <div class="card bg-color-2">
-          <div class="card-content" style="padding-top:16px;">
-            <h3 class="color-2" style="font-size:18px;">2. Disciplined Ownership</h3>
-            <p>Take initiative, use freedom responsibly, and own outcomes without waiting to be asked.</p>
-          </div>
-        </div>
-        <div class="card bg-color-3">
-          <div class="card-content" style="padding-top:16px;">
-            <h3 class="color-3" style="font-size:18px;">3. Feedback-Seeking</h3>
-            <p>Measure impact, invite feedback, and continuously improve through honest reflection.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Short Version Grid - Row 2 (centered) -->
-      <div class="grid" style="grid-template-columns: repeat(2, 1fr); max-width: 780px; margin: 0 auto 100px;">
-        <div class="card bg-color-4">
-          <div class="card-content" style="padding-top:16px;">
-            <h3 class="color-4" style="font-size:18px;">4. Healthy, Caring Humans</h3>
-            <p>Take care of your health, energy, and passions beyond work. Treat each other with kindness.</p>
-          </div>
-        </div>
-        <div class="card bg-color-5">
-          <div class="card-content" style="padding-top:16px;">
-            <h3 class="color-5" style="font-size:18px;">5. Global Mindset</h3>
-            <p>Work confidently in English. Learn about other cultures while valuing our own cultural roots.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Detailed Versions -->
-      <div class="value-row">
-        <div class="value-content">
-          <h3 class="color-1">1. Teamwork</h3>
-          <p><strong>Respect team routines, align on the “why” and priorities, and actively support others to remove blockers.</strong></p>
-          <h4>What does it mean?</h4>
-          <ul>
-            <li>Follow team routines and agreements.</li>
-            <li>Align on the “why” before jumping into execution. Before starting work, make sure you understand the goal, priorities, and trade-offs. If unclear, pause and clarify.</li>
-            <li>Re-align quickly when things change. When new information, constraints, or decisions appear, communicate early and help the team adjust course together.</li>
-            <li>Actively support others and remove blockers.</li>
-            <li>Optimise for team outcomes, not individual wins.</li>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-list">
+            <li>
+              <span class="footer-icon">✉️</span>
+              <span><a href="mailto:hi@ahaslides.com" class="footer-link">hi@ahaslides.com</a></span>
+            </li>
+            <li>
+              <span class="footer-icon">📞</span>
+              <span>0977 544 062</span>
+            </li>
           </ul>
         </div>
-        <div class="value-img">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800" alt="Teamwork" />
-        </div>
-      </div>
 
-      <div class="value-row">
-        <div class="value-content">
-          <h3 class="color-2">2. Disciplined Ownership (Tự Giác)</h3>
-          <p><strong>Take initiative, use freedom responsibly, and own outcomes without waiting to be asked.</strong></p>
-          <h4>What does it mean?</h4>
-          <ul>
-            <li>Manage your time, priorities, commitments, and resources with self-discipline.</li>
-            <li>Speak up early when something needs attention. Never wait to be asked or assume someone else will handle it.</li>
-            <li>Use your freedom and privileges responsibly.</li>
-            <li>Take full ownership of outcomes. Own results, not just tasks or effort. Learn from mistakes. Don’t blame.</li>
-            <li>If you think something needs to happen, you have a duty to address it. Don’t just complain or be indifferent.</li>
+        <div>
+          <h4 class="footer-title">Locations</h4>
+          <ul class="footer-list">
+            <li>
+              <span class="footer-icon">📍</span>
+              <span>20A Tanjong Pagar Rd, Singapore 088443</span>
+            </li>
+            <li>
+              <span class="footer-icon">📍</span>
+              <span>105 Lang Ha St, Hanoi, Vietnam</span>
+            </li>
           </ul>
         </div>
-        <div class="value-img">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800" alt="Ownership" />
-        </div>
       </div>
 
-      <div class="value-row">
-        <div class="value-content">
-          <h3 class="color-3">3. Feedback-Seeking</h3>
-          <p><strong>Measure impact, invite feedback, and continuously improve through honest reflection.</strong></p>
-          <h4>What does it mean?</h4>
-          <ul>
-            <li>Seek feedback early, often, and obsessively - from our users, customers, stakeholders, and teammates.</li>
-            <li>Treat feedback as input for improvement, not as personal criticism. Make it safe for others to give you feedback.</li>
-            <li>Measure the impact of your work, not just activity or effort.</li>
-            <li>Continuously reflect, learn, and adjust how you work. Embrace mistakes. Treat problems as opportunities to improve. Never blame.</li>
-            <li>Give feedback constructively and timely.</li>
-          </ul>
-        </div>
-        <div class="value-img">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800" alt="Feedback" />
-        </div>
-      </div>
-
-      <div class="value-row">
-        <div class="value-content">
-          <h3 class="color-4">4. Being Healthy, Caring Humans</h3>
-          <p><strong>Take care of your health, energy, and passions beyond work. Treat each other with kindness - no toxicity, no politics.</strong></p>
-          <h4>What does it mean?</h4>
-          <ul>
-            <li>Rest properly and use your time off. Keep passions and a life beyond work.</li>
-            <li>Make space for interests, family, and personal goals outside your job - energy and creativity come from a full life.</li>
-            <li>Be kind to each other. Maintain zero tolerance for toxicity and politics.</li>
-            <li>No gossip, personal attacks, passive aggression, or power games. Raise issues openly and constructively.</li>
-          </ul>
-        </div>
-        <div class="value-img">
-          <img src="https://images.unsplash.com/photo-1494178270175-e96de2971df9?q=80&w=800" alt="Healthy Caring" />
-        </div>
-      </div>
-
-      <div class="value-row">
-        <div class="value-content">
-          <h3 class="color-5">5. Global Mindset</h3>
-          <p><strong>Work confidently in English. Learn about other cultures while valuing our own cultural roots.</strong></p>
-          <h4>What does it mean?</h4>
-          <ul>
-            <li>Use English clearly and confidently as our shared working language.</li>
-            <li>Stay curious and actively learn about other cultures.</li>
-            <li>Show cultural sensitivity and mutual respect in interactions.</li>
-            <li>Be mindful of tone and humour, especially in written communication.</li>
-            <li>Learn from global perspectives without copying any single culture or treating one way of working as the default.</li>
-          </ul>
-        </div>
-        <div class="value-img">
-          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800" alt="Global Mindset" />
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="jobs" class="section" style="background: rgba(124, 58, 237, 0.02)">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag-label">Careers</span>
-        <h2 class="title">Open Positions</h2>
-        <p class="subtitle">Find your next role and help us shape the future of presentations.</p>
-      </div>
-
-      <div class="grid grid-3">
-        <a href="https://ahaslides.com/jobs/spanish-editor/" target="_blank" class="card job-card">
-          <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800" alt="Spanish Editor Intern" />
-          <span class="tag">Internship</span>
-          <div class="card-content">
-            <h3 class="color-1">Spanish Editor Intern</h3>
-            <span class="job-card-arrow color-1">➔</span>
-          </div>
-        </a>
-
-        <a href="https://ahaslides.com/jobs/english-editor-2/" target="_blank" class="card job-card">
-          <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800" alt="English Editor Intern" />
-          <span class="tag">Internship</span>
-          <div class="card-content">
-            <h3 class="color-2">English Editor Intern</h3>
-            <span class="job-card-arrow color-2">➔</span>
-          </div>
-        </a>
-
-        <a href="https://ahaslides.com/jobs/finance-manager/" target="_blank" class="card job-card">
-          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800" alt="Finance Manager" />
-          <span class="tag">Finance</span>
-          <div class="card-content">
-            <h3 class="color-3">Finance Manager</h3>
-            <span class="job-card-arrow color-3">➔</span>
-          </div>
-        </a>
-
-        <a href="https://ahaslides.com/jobs/software-engineer-internship-hanoi-based/" target="_blank" class="card job-card">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" alt="Software Engineer Internship" />
-          <span class="tag">Engineering</span>
-          <div class="card-content">
-            <h3 class="color-4">Software Engineer Intern</h3>
-            <span class="job-card-arrow color-4">➔</span>
-          </div>
-        </a>
-
-        <a href="https://ahaslides.com/jobs/customer-support-specialist/" target="_blank" class="card job-card">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" alt="Customer Support Specialist" />
-          <span class="tag">Support</span>
-          <div class="card-content">
-            <h3 class="color-5">Customer Support Specialist</h3>
-            <span class="job-card-arrow color-5">➔</span>
-          </div>
-        </a>
-
-        <a href="https://ahaslides.com/jobs/saas-onboarding-specialist/" target="_blank" class="card job-card">
-          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800" alt="SaaS Onboarding Specialist" />
-          <span class="tag">Growth</span>
-          <div class="card-content">
-            <h3 class="color-6">SaaS Onboarding Specialist</h3>
-            <span class="job-card-arrow color-6">➔</span>
-          </div>
-        </a>
+      <div class="footer-bottom">
+        &copy; 2026 AhaSlides. All rights reserved. <br> <a href="https://ahaslides.com" target="_blank"
+          style="color:var(--primary); font-weight: 500; margin-top: 8px; display: inline-block;">Explore our main
+          website &rarr;</a>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <section id="culture" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag-label">Our DNA</span>
-        <h2 class="title">Life at AhaSlides</h2>
-        <p class="subtitle">A culture built on transparency, playfulness, and striving for excellence.</p>
-      </div>
+  <script>
+    // ==============================================
+    //  1. SCROLL PROGRESS BAR
+    // ==============================================
+    const scrollProgress = document.getElementById('scrollProgress');
 
-      <div class="grid grid-3">
-        <div class="card">
-          <!-- Fallbacks added visually in case images don't load -->
-          <img src="./culture/1.jpg" onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800'" alt="Teamwork" />
-          <div class="card-content">
-            <h3>Teamwork</h3>
-          </div>
-        </div>
+    // ==============================================
+    //  2. CURSOR GLOW FOLLOWER
+    // ==============================================
+    const cursorGlow = document.getElementById('cursorGlow');
+    let mouseX = 0, mouseY = 0;
+    let glowX = 0, glowY = 0;
 
-        <div class="card">
-          <img src="./culture/2.jpg" onerror="this.src='https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=800'" alt="Fun" />
-          <div class="card-content">
-            <h3>Fun & Games</h3>
-          </div>
-        </div>
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      cursorGlow.classList.add('active');
+    });
 
-        <div class="card">
-          <img src="./culture/3.jpg" onerror="this.src='https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800'" alt="Moments" />
-          <div class="card-content">
-            <h3>Unforgettable Moments</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    document.addEventListener('mouseleave', () => {
+      cursorGlow.classList.remove('active');
+    });
 
-  <section class="section pt-0">
-    <div class="container">
-      <div class="cta-container">
-        <div class="cta-content">
-          <h2>Ready to make an impact?</h2>
-          <p>We are always on the lookout for passionate talents. If you don't see a role that fits but still want to join, drop your CV.</p>
-          <a href="mailto:ha@ahaslides.com" class="btn btn-outline">Send Your CV</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <img src="./logo/logo.png" class="logo-img" alt="AhaSlides" style="height: 36px;" onerror="this.style.display='none'" />
-        <p style="margin-top: 16px;">Empowering presenters. Engaging audiences. Join our mission today.</p>
-      </div>
-
-      <div>
-        <h4 class="footer-title">Contact</h4>
-        <ul class="footer-list">
-          <li>
-            <span class="footer-icon">✉️</span>
-            <span><a href="mailto:ha@ahaslides.com" class="footer-link">ha@ahaslides.com</a></span>
-          </li>
-          <li>
-            <span class="footer-icon">📞</span>
-            <span>0977 544 062</span>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-title">Locations</h4>
-        <ul class="footer-list">
-          <li>
-            <span class="footer-icon">📍</span>
-            <span>20A Tanjong Pagar Rd, Singapore 088443</span>
-          </li>
-          <li>
-            <span class="footer-icon">📍</span>
-            <span>105 Lang Ha St, Hanoi, Vietnam</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      &copy; 2026 AhaSlides. All rights reserved. <br> <a href="https://ahaslides.com" target="_blank" style="color:var(--primary); font-weight: 500; margin-top: 8px; display: inline-block;">Explore our main website &rarr;</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // Navbar scroll effect with animated gradient border
-  const navbar = document.querySelector('.navbar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-      navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
-      navbar.classList.add('navbar-scrolled');
-    } else {
-      navbar.style.background = 'rgba(255, 255, 255, 0.85)';
-      navbar.style.boxShadow = 'none';
-      navbar.classList.remove('navbar-scrolled');
+    // Smooth glow follow with lerp
+    function animateGlow() {
+      glowX += (mouseX - glowX) * 0.12;
+      glowY += (mouseY - glowY) * 0.12;
+      cursorGlow.style.transform = `translate(calc(${glowX}px - 50%), calc(${glowY}px - 50%))`;
+      requestAnimationFrame(animateGlow);
     }
-  });
+    animateGlow();
 
-  // Scroll reveal animation
-  const revealElements = document.querySelectorAll('.section-header, .card, .value-row, .cta-container, .footer-grid');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('reveal', 'visible');
-        // Stagger children cards
-        const cards = entry.target.parentElement?.querySelectorAll('.card');
-        if (cards) {
-          cards.forEach((card, i) => {
-            card.classList.add('reveal', 'visible');
-            card.style.transitionDelay = `${i * 0.1}s`;
+    // ==============================================
+    //  3. NAVBAR SCROLL EFFECT
+    // ==============================================
+    const navbar = document.querySelector('.navbar');
+
+    // ==============================================
+    //  4. MASTER SCROLL HANDLER (optimized rAF)
+    // ==============================================
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+          // Scroll progress bar
+          const progress = (scrollY / docHeight) * 100;
+          scrollProgress.style.width = progress + '%';
+
+          // Navbar
+          if (scrollY > 50) {
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
+            navbar.classList.add('navbar-scrolled');
+          } else {
+            navbar.style.background = 'rgba(255, 255, 255, 0.85)';
+            navbar.style.boxShadow = 'none';
+            navbar.classList.remove('navbar-scrolled');
+          }
+
+          // Hero parallax image
+          const heroImg = document.querySelector('.hero-img-wrapper img');
+          if (heroImg && scrollY < 800) {
+            heroImg.style.transform = `perspective(1000px) rotateY(${-5 + scrollY * 0.008}deg) rotateX(${5 - scrollY * 0.005}deg) translateY(${scrollY * 0.03}px)`;
+          }
+
+          // Floating blobs mouse-independent parallax
+          const blobs = document.querySelectorAll('.hero > div[style*="position:absolute"]');
+          blobs.forEach((blob, i) => {
+            const speed = 0.02 + i * 0.015;
+            blob.style.marginTop = `${scrollY * speed}px`;
           });
-        }
+
+          // Value images parallax on scroll
+          document.querySelectorAll('.value-img img').forEach((img) => {
+            const rect = img.getBoundingClientRect();
+            const center = rect.top + rect.height / 2;
+            const offset = (window.innerHeight / 2 - center) * 0.04;
+            img.style.transform = `scale(1) translateY(${offset}px)`;
+          });
+
+          ticking = false;
+        });
+        ticking = true;
       }
     });
-  }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
 
-  // Initially hide elements
-  revealElements.forEach(el => {
-    el.classList.add('reveal');
-    revealObserver.observe(el);
-  });
+    // ==============================================
+    //  5. SCROLL REVEAL WITH STAGGER
+    // ==============================================
+    const revealElements = document.querySelectorAll('.section-header, .card, .value-row, .cta-container, .footer-grid');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal', 'visible');
+          const cards = entry.target.parentElement?.querySelectorAll('.card');
+          if (cards) {
+            cards.forEach((card, i) => {
+              card.classList.add('reveal', 'visible');
+              card.style.transitionDelay = `${i * 0.1}s`;
+            });
+          }
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
 
-  // Parallax effect on hero image
-  const heroImg = document.querySelector('.hero-img-wrapper img');
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    if (heroImg && scrolled < 800) {
-      heroImg.style.transform = `perspective(1000px) rotateY(${-5 + scrolled * 0.008}deg) rotateX(${5 - scrolled * 0.005}deg) translateY(${scrolled * 0.03}px)`;
+    revealElements.forEach(el => {
+      el.classList.add('reveal');
+      revealObserver.observe(el);
+    });
+
+    // ==============================================
+    //  6. SECTION SCALE ENTRANCE
+    // ==============================================
+    const sections = document.querySelectorAll('.section, .hero');
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('section-scale', 'in-view');
+        }
+      });
+    }, { threshold: 0.05 });
+    sections.forEach(s => {
+      s.classList.add('section-scale');
+      // Make hero visible immediately
+      if (s.classList.contains('hero')) {
+        s.classList.add('in-view');
+      }
+      sectionObserver.observe(s);
+    });
+
+    // ==============================================
+    //  7. WORD-BY-WORD TEXT REVEAL
+    // ==============================================
+    document.querySelectorAll('.title, .hero h1').forEach(title => {
+      title.classList.add('word-reveal');
+
+      // Walk through DOM tree and only wrap text nodes in word spans
+      const walker = document.createTreeWalker(title, NodeFilter.SHOW_TEXT, null, false);
+      const textNodes = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+      textNodes.forEach(node => {
+        const words = node.textContent.split(/(\s+)/);
+        const fragment = document.createDocumentFragment();
+        words.forEach(w => {
+          if (w.trim().length === 0) {
+            fragment.appendChild(document.createTextNode(w));
+          } else {
+            const span = document.createElement('span');
+            span.className = 'word';
+            span.textContent = w;
+            fragment.appendChild(span);
+          }
+        });
+        node.parentNode.replaceChild(fragment, node);
+      });
+    });
+
+    const wordRevealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          const words = entry.target.querySelectorAll('.word');
+          words.forEach((word, i) => {
+            word.style.transitionDelay = `${i * 0.06}s`;
+          });
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.word-reveal').forEach(el => wordRevealObserver.observe(el));
+
+    // ==============================================
+    //  8. 3D TILT EFFECT ON CARDS
+    // ==============================================
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -8;
+        const rotateY = ((x - centerX) / centerX) * 8;
+
+        card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.02)`;
+
+        // Move the glow gradient to cursor position
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(800px) rotateX(0) rotateY(0) translateY(0) scale(1)';
+        card.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)';
+      });
+
+      card.addEventListener('mouseenter', () => {
+        card.style.transition = 'transform 0.1s ease-out';
+      });
+    });
+
+    // ==============================================
+    //  9. MAGNETIC BUTTON EFFECT
+    // ==============================================
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        btn.style.transform = `translate(${x * 0.3}px, ${y * 0.4}px) scale(1.05)`;
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0) scale(1)';
+        btn.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)';
+      });
+
+      btn.addEventListener('mouseenter', () => {
+        btn.style.transition = 'transform 0.15s ease-out';
+      });
+    });
+
+    // ==============================================
+    // 10. PARALLAX DEPTH ON FLOATING SHAPES (Mouse)
+    // ==============================================
+    const floatingShapes = document.querySelectorAll('.hero > div[style*="position:absolute"]');
+    document.addEventListener('mousemove', (e) => {
+      const mx = (e.clientX / window.innerWidth - 0.5) * 2;
+      const my = (e.clientY / window.innerHeight - 0.5) * 2;
+
+      floatingShapes.forEach((shape, i) => {
+        const depth = 15 + i * 10;
+        const currentMarginTop = parseFloat(shape.style.marginTop) || 0;
+        shape.style.transform = `translate(${mx * depth}px, ${my * depth}px)`;
+      });
+    });
+
+    // ==============================================
+    // 11. HERO IMAGE MOUSE TILT
+    // ==============================================
+    const heroWrapper = document.querySelector('.hero-img-wrapper');
+    if (heroWrapper) {
+      heroWrapper.addEventListener('mousemove', (e) => {
+        const rect = heroWrapper.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        const img = heroWrapper.querySelector('img');
+        if (img) {
+          img.style.transform = `perspective(1000px) rotateY(${x * 15}deg) rotateX(${-y * 15}deg) scale(1.02)`;
+          img.style.transition = 'transform 0.1s ease-out';
+        }
+      });
+      heroWrapper.addEventListener('mouseleave', () => {
+        const img = heroWrapper.querySelector('img');
+        if (img) {
+          img.style.transform = 'perspective(1000px) rotateY(-5deg) rotateX(5deg)';
+          img.style.transition = 'transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)';
+        }
+      });
     }
-  });
 
-  // Smooth counter animation for a fun touch
-  const style = document.createElement('style');
-  style.textContent = `
+    // ==============================================
+    // 12. CTA SECTION RIPPLE ON MOUSE
+    // ==============================================
+    const ctaContainer = document.querySelector('.cta-container');
+    if (ctaContainer) {
+      ctaContainer.addEventListener('mousemove', (e) => {
+        const rect = ctaContainer.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        ctaContainer.querySelector('::before');
+        ctaContainer.style.backgroundPosition = `${x}% ${y}%`;
+        // Move the radial glow
+        const before = ctaContainer.style;
+        before.setProperty('--ripple-x', x + '%');
+        before.setProperty('--ripple-y', y + '%');
+      });
+    }
+
+    // ==============================================
+    // 13. DYNAMIC STYLES
+    // ==============================================
+    const style = document.createElement('style');
+    style.textContent = `
     .card:hover img {
-      transform: scale(1.05);
+      transform: translateZ(30px) scale(1.05) !important;
       transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     .value-img img {
       transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     .value-img:hover img {
-      transform: scale(1.03);
+      transform: scale(1.05) !important;
+      box-shadow: 0 30px 60px -10px rgba(124, 58, 237, 0.25) !important;
     }
     .nav-links a {
       position: relative;
@@ -1161,8 +1750,34 @@
     .nav-links a:hover::after {
       width: 100%;
     }
+    /* Smooth scroll snap feel */
+    @media (min-width: 769px) {
+      .value-row {
+        transition: transform 0.6s ease, opacity 0.6s ease;
+      }
+      .value-row:hover {
+        transform: scale(1.01);
+      }
+      .value-row:hover .value-img img {
+        box-shadow: 0 25px 50px -10px rgba(0,0,0,0.2);
+      }
+    }
+    /* Interactive footer links */
+    .footer-list li {
+      transition: transform 0.3s ease, padding-left 0.3s ease;
+    }
+    .footer-list li:hover {
+      transform: translateX(8px);
+      padding-left: 4px;
+    }
+    /* Hover glow on section headers */
+    .section-header:hover .title {
+      text-shadow: 0 0 40px rgba(124, 58, 237, 0.15);
+      transition: text-shadow 0.4s ease;
+    }
   `;
-  document.head.appendChild(style);
-</script>
+    document.head.appendChild(style);
+  </script>
 </body>
+
 </html>
